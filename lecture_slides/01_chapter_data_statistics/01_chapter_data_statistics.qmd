@@ -1,9 +1,9 @@
 ---
 title: "<span style = 'font-size: 100%;'> MGMT 30500: Business Statistics </span>"
-subtitle: "<span style = 'font-size: 150%;'> Intro. & Basic Stat. & Prob. Rvw. </span>"
+subtitle: "<span style = 'font-size: 150%;'> Intro. & Basic Stat. & Prob. Rvw. 01 </span>"
 author: "Professor: Davi Moreira"
-date: "2024-08-01"
-date-format: "MMMM DD, YYYY"
+#date: "2024-08-01"
+#date-format: "MMMM DD, YYYY"
 format:
   revealjs: 
     transition: slide
@@ -127,11 +127,11 @@ knitr::include_graphics("figs/carnaval_olinda.jpg")
 
     -   Brightspace
 
-    -   [Course Webpage](https://davi-moreira.github.io/2024F_business_statistics_purdue_MGMT305)
+    -   [Course Webpage](https://davi-moreira.github.io/2025F_business_statistics_purdue_MGMT305)
 
--   [**Syllabus**](https://davi-moreira.github.io/2024F_business_statistics_purdue_MGMT305){target="_blank"}
+-   [**Syllabus**](https://davi-moreira.github.io/2025F_business_statistics_purdue_MGMT305){target="_blank"}
 
--   [**Schedule**](https://davi-moreira.github.io/2024F_business_statistics_purdue_MGMT305){target="_blank"}
+-   [**Schedule**](https://davi-moreira.github.io/2025F_business_statistics_purdue_MGMT305){target="_blank"}
 
 # Business Statistics {background-color="#cfb991"}
 

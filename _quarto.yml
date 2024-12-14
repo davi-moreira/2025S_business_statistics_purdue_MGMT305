@@ -21,8 +21,10 @@ website:
         text: Home
       - href: syllabus.qmd
         text: Syllabus
+      - href: material.qmd
+        text: Materials
       - href: schedule.qmd
-        text: Schedule and Material
+        text: Schedule
 #      #- href: problemset.qmd
 #      #  text: Problem Sets
 #      # - href: finalproject.qmd

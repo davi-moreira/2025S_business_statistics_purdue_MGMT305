@@ -2,8 +2,8 @@
 title: "<span style = 'font-size: 100%;'> MGMT 30500: Business Statistics </span>"
 subtitle: "<span style = 'font-size: 150%;'> Analysis of Variance (ANOVA)</span>"
 author: "Professor<br>Davi Moreira<br>"
-date: "2024-08-01"
-date-format: "MMMM DD, YYYY"
+# date: "2024-08-01"
+# date-format: "MMMM DD, YYYY"
 format:
   revealjs: 
     transition: slide
