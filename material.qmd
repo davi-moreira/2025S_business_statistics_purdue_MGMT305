@@ -27,9 +27,9 @@ author: "Davi Moreira"
 
 <style>
   .overflow-table {
-    font-size: 0.75rem; /* Smaller font for compact display */
+    font-size: 0.85rem; /* Smaller font for compact display */
     width: 100%; /* Ensure the table fits within page width */
-    table-layout: auto; /* Allow columns to adjust */
+    table-layout: fixed; /* Fix column widths */
     line-height: 1.2; /* Tighter line spacing */
   }
   .overflow-table th, .overflow-table td {
@@ -38,8 +38,11 @@ author: "Davi Moreira"
     word-wrap: break-word; /* Wrap long text within cells */
     vertical-align: top; /* Align cell content to the top */
   }
+  .overflow-table th:nth-child(1), .overflow-table td:nth-child(1) {
+    width: 22%; /* Increase width of the first column */
+  }
   .below-table {
-    font-size: 0.75rem; /* Match the font size of the table */
+    font-size: 0.85rem; /* Match the font size of the table */
     line-height: 1.2; /* Match line height */
     margin-top: 1rem; /* Add spacing above the text */
   }
