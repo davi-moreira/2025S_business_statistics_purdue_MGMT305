@@ -1,9 +1,11 @@
 ---
-title: "Materials: MGMT 30500: Business Statistics"
-subtitle: "Mitch. Daniels School of Business, Purdue University"
-date-modified: "last-modified"
-date: "2025-01-13"
-date-format: "MMM D, YYYY"
+title: "Materials"
+author: "Davi Moreira"
+# title: "Materials: MGMT 30500: Business Statistics"
+# subtitle: "Mitch. Daniels School of Business, Purdue University"
+# date-modified: "last-modified"
+# date: "2025-01-13"
+# date-format: "MMM D, YYYY"
 # listing:
 #   - id: schedule
 #     contents:

@@ -32,7 +32,7 @@
   {
     "objectID": "syllabus.html#course-description",
     "href": "syllabus.html#course-description",
-    "title": "Syllabus: MGMT 30500: Business Statistics",
+    "title": "Syllabus",
     "section": "Course Description",
     "text": "Course Description\nThe course is designed to introduce students to basic data analysis techniques. Coverage will include the application of probability distributions such as the normal, the \\(t\\), and the binomial; sampling distributions, basic statistical inference methods, analysis of variance, applied linear regression techniques, logistic regression time series analysis, statistical quality control, and decision analysis.\nCourse Website: https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305",
     "crumbs": [
@@ -42,7 +42,7 @@
   {
     "objectID": "syllabus.html#instructor",
     "href": "syllabus.html#instructor",
-    "title": "Syllabus: MGMT 30500: Business Statistics",
+    "title": "Syllabus",
     "section": "Instructor",
     "text": "Instructor\n\nInstructor: Professor Davi Moreira\n\nOffice: Young Hall 414\nEmail: dmoreira@purdue.edu\nVirtual Office hours: Zoom link in your Course Brightspace Page\nIndividual Appointments: Book time with me through the link in the course syllabus on your Course Brightspace Page or by appointment.",
     "crumbs": [
@@ -52,7 +52,7 @@
   {
     "objectID": "syllabus.html#learning-outcomes",
     "href": "syllabus.html#learning-outcomes",
-    "title": "Syllabus: MGMT 30500: Business Statistics",
+    "title": "Syllabus",
     "section": "Learning Outcomes",
     "text": "Learning Outcomes\nBy the end of this course, students will be able to:\n\nUnderstand the basic statistical principles and their applications in the area of management and business.\nUnderstand fundamental issues in business and management.\nDescribe and use the commonly used statistical techniques for analyzing business data.\nUnderstand the impacts of recent developments in big data and AI in business and management.\nBe proficient in using Excel to carry out statistical and analytics methods covered in the course.",
     "crumbs": [
@@ -62,7 +62,7 @@
   {
     "objectID": "syllabus.html#objectives",
     "href": "syllabus.html#objectives",
-    "title": "Syllabus: MGMT 30500: Business Statistics",
+    "title": "Syllabus",
     "section": "Objectives",
     "text": "Objectives\nOur main goal is to instill the basic quantitative and data analysis skills needed by managers in modern business, where Business Analytics and Data Science have become important. These skills will help managers to understand and carry out data-based decision making, risk assessments, and policy making and to work effectively with data analysis teams to improve all aspects of business performance.\nModern data analysis is done using computers and various types of sophisticated software. Therefore, to most effectively introduce management candidates to its techniques, we will also emphasize software applications (with Microsoft Excel, R, or Python) in this course.",
     "crumbs": [
@@ -72,7 +72,7 @@
   {
     "objectID": "syllabus.html#course-materials",
     "href": "syllabus.html#course-materials",
-    "title": "Syllabus: MGMT 30500: Business Statistics",
+    "title": "Syllabus",
     "section": "Course Materials",
     "text": "Course Materials\n\nTextbook: Anderson, Sweeney, Williams, Camn, Cochran, Fry, and Ohlmann: Modern Business Statistics with Microsoft Excel, 7th edition, 2020, Cengage Learning, Inc. (Required). This text is also used in STAT 30301.\nHandouts: Lecture slides and supplementary materials. These are posted on Brightspace (Brightspace -&gt; Content -&gt; Table of Contents -&gt; ….)",
     "crumbs": [
@@ -82,7 +82,7 @@
   {
     "objectID": "syllabus.html#course-infrastructure",
     "href": "syllabus.html#course-infrastructure",
-    "title": "Syllabus: MGMT 30500: Business Statistics",
+    "title": "Syllabus",
     "section": "Course Infrastructure",
     "text": "Course Infrastructure\n\nBrightspace: The Course Brightspace Page (https://purdue.brightspace.com/) should be checked on a regular basis for announcements and course material.\nSoftware: Microsoft Excel will be used for in-class demonstrations and instruction. The main tool is Data Analysis under Tools. If you don’t see this tool, follow these steps to add it in:\n\nFile &gt; Options &gt; Add-ins &gt; Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) &gt; Go &gt; Data &gt; Data Analysis (to conduct analyses)\n\nCourse Website: This class website will be used throughout the course, but it does not replace the Course Brightspace Page.",
     "crumbs": [
@@ -92,7 +92,7 @@
   {
     "objectID": "syllabus.html#assessments",
     "href": "syllabus.html#assessments",
-    "title": "Syllabus: MGMT 30500: Business Statistics",
+    "title": "Syllabus",
     "section": "Assessments",
     "text": "Assessments\n\nGrading\nFollowing a university-wide initiative, the School has adopted an Official Grading Policy for core courses such as MGMT 30500. Under this policy, the overall GPA for this class can be no higher than 3.0. To comply with this course policy, final course letter grades will be based on the curved class final course percentages. The final course percentage is based on a weighted percentage computed using the weights shown in the table below:\n\n\n\nAssignment\nPercentage\n\n\n\n\nHomework*\n40%\n\n\nQuizzes**\n15%\n\n\nMidterms***\n15%\n\n\nAttendance/Participation\n7%\n\n\nFinal****\n23%\n\n\n\n*There are eight homework assignments. No homework assignment is dropped. The final homework score is calculated using aggregated points.\n**There are three quizzes worth 5% each. Quizzes 2 and 3 are not cumulative.\n***There are two midterms: each is worth 7.5%. Midterms are not cumulative.\n**** Final is cumulative.\n\n\nHomework\nHomework assignments are uploaded to Brightspace and must be submitted as a single PDF or Word file with all relevant outputs. Late submissions are not accepted. Ensure to:\n\nInclude all software outputs addressing the homework questions.\nClearly identify each problem with its respective chapter and problem number.\nDo not copy and paste datasets into your submissions.\n\nDiscuss problems with classmates, but ensure individual submissions. Duplicate papers are considered cheating.\n\n\nQuizzes and Exams\n\nQuizzes: Three quizzes will be given, with none being cumulative. Exceptional circumstances for make-ups require documentation.\nExams: Two midterms (7.5% each) and one final (23%) will test technical and conceptual understanding. Calculators without internet access are required. Makeup exams are only granted for documented exceptional circumstances.\n\n\n\nAttendance and Participation\nRandom attendance will be recorded through participation activities during class time. Participation in class discussions is essential and will influence the grade.\n\n\nGrade Challenges\nChallenges to grades must be submitted within 7 calendar days of the grade announcement, with the exception of the final homework, which has a 3-day window. Provide specific details and reasons for challenges via email.\n\n\nExtra Credit Opportunity\nA bonus will be provided if at least 85% of the class completes the midterm and/or final course evaluations.",
     "crumbs": [
@@ -102,7 +102,7 @@
   {
     "objectID": "syllabus.html#keys-to-success",
     "href": "syllabus.html#keys-to-success",
-    "title": "Syllabus: MGMT 30500: Business Statistics",
+    "title": "Syllabus",
     "section": "Keys to Success",
     "text": "Keys to Success\n\nConsistent Effort: Follow the schedule diligently.\nPre-Class Preparation: Review materials and exercises beforehand.\nClass Materials: Ensure accessibility of readings and notes.\nEngagement: Regularly practice problems and seek clarifications.\nActive Learning: Actively engage with materials and presentations.",
     "crumbs": [
@@ -112,7 +112,7 @@
   {
     "objectID": "syllabus.html#ai-policy",
     "href": "syllabus.html#ai-policy",
-    "title": "Syllabus: MGMT 30500: Business Statistics",
+    "title": "Syllabus",
     "section": "AI Policy",
     "text": "AI Policy\nStudents are encouraged to use AI tools for learning enhancement but must adhere to the following:\n\nAI tools are prohibited during exams.\nRefine prompts for effective outputs.\nUse AI for learning, not solution generation.\nCite any use of AI tools in submissions.",
     "crumbs": [
@@ -122,7 +122,7 @@
   {
     "objectID": "syllabus.html#additional-information",
     "href": "syllabus.html#additional-information",
-    "title": "Syllabus: MGMT 30500: Business Statistics",
+    "title": "Syllabus",
     "section": "Additional Information",
     "text": "Additional Information\nRefer to Brightspace for deadlines, academic integrity policies, accommodations, CAPS information, and non-discrimination statements.",
     "crumbs": [
@@ -132,7 +132,7 @@
   {
     "objectID": "syllabus.html#schedule",
     "href": "syllabus.html#schedule",
-    "title": "Syllabus: MGMT 30500: Business Statistics",
+    "title": "Syllabus",
     "section": "Schedule",
     "text": "Schedule",
     "crumbs": [
@@ -142,7 +142,7 @@
   {
     "objectID": "material.html",
     "href": "material.html",
-    "title": "Materials: MGMT 30500: Business Statistics",
+    "title": "Materials",
     "section": "",
     "text": "Topic\nBook Sections*\nSlides**\nData\nSupplementary Materials\n\n\n\n\nBasic Stat. & Prob. Rvw. 01\n1.2, 1.4, 1.5\nslides\ndata\n- Video: The NBA Data Scientist- Video: Hans Rosling’s 200 Countries, 200 Years\n\n\nBasic Stat. & Prob. Rvw. 02\n1.8, 3.3 (omit Chebyshev), 3.4, 3.5\nslides\ndata\n- Video: Data Basics: Observations, Variable, and Data Matrices- Video: Summarizing and Graphing Numerical Data- Video: Exploring Categorical Data\n\n\nBasic Stat. & Prob. Rvw. 03\n3.5, 6.2, t Dist. Supplement\nslides\n.\n- Video: Normal Distribution\n\n\nInt. Est. Rvw.\n8.1, 8.2, 8.3, 8.4\nslides\n.\n- Video: Point Estimates and Sampling Variability- Video: Confidence Intervals- Video: Inferences for Proportions- Video: t-distribution- Video: Inference for one mean\n\n\nHyp. Testing Rvw. 01\n9.1, 9.2, 9.4, 9.5\nslides\n.\n- Video: Hypothesis Testing Fundamentals\n\n\nHyp. Testing Rvw. 02\n11.1, 11.2\nslides\ndata\n- Nature: Statisticians issue warning over misuse of P-values\n\n\nAnalysis of Variance\n13.1, 13.2\nslides\ndata\n- Video: ANOVA Introduction- Video: Conditions for ANOVA- Video: Multiple comparisons\n\n\nSimple Regression\n14.1, 14.2, 14.3, 14.4, 14.5, 14.6, 14.7, 14.8, 14.9\nslides\ndata\n- Video: Line Fitting, Residuals, and Correlation- Video: Fitting a Line with Least Squares Regression- Video: Least Squares Regression- Video: Types of Outliers in Linear Regression- Video: Inference for Linear Regression\n\n\nMultiple Regression\n15.1, 15.2, 15.3, 15.4, 15.5, 15.6, 15.7, 15.8\nslides\ndata\n- Video: Introduction to Multiple Regression- Video: Model Selection in Multiple Regression- Video: Checking Multiple Regression Diagnostics Using Graphs\n\n\nModel Building\n16.1, 16.2, 16.3, 16.4\nslides\ndata\n- Video: Model Selection in Multiple Regression\n\n\nLogistic Regression\nSupplement in Brightspace and Slides\nslides\n.\n- Video: Basic Ideas of Logistic Regression\n\n\nTime Series\n17.1, 17.2, 17.3, 17.4, 17.5, 17.6\nslides\ndata\n- Video: Time Series Forecast Using Forecast Sheet in Excel\n\n\nQuality Control\n19.1, 19.2, 19.3\nslides\n.\n.\n\n\nDecision Analysis\n20.1, 20.2, 20.3, 20.4\nslides\n.\n- Video: Bayes theorem, the geometry of changing beliefs\n\n\n\n\n\n* Section Numbers refer to sections in the course textbook.\n** Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.",
     "crumbs": [

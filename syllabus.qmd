@@ -1,6 +1,8 @@
 ---
-title: "Syllabus: MGMT 30500: Business Statistics"
-subtitle: "Mitch. Daniels School of Business, Purdue University"
+title: "Syllabus"
+author: "Davi Moreira"
+# title: "Syllabus: MGMT 30500: Business Statistics"
+# subtitle: "Mitch. Daniels School of Business, Purdue University"
 # date-modified: "last-modified"
 # date: "2025-08-01"
 # date-format: "MMM D, YYYY"
