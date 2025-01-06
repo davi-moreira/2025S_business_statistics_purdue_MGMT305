@@ -163,8 +163,8 @@
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#overview",
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#overview",
     "title": " MGMT 30500: Business Statistics ",
-    "section": "",
-    "text": "Introductions\nCourse Overview and Logistics\nMotivation\nCourse Objectives\n\nUnderstand basic statistical concepts\nApply statistical methods to business problems\n\n\n\n\nKey Topics\n\nDescriptive Statistics\nInferential Statistics\nExcel4stats"
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\nIntroductions\nCourse Overview and Logistics\nMotivation\nCourse Objectives\n\nUnderstand basic statistical concepts\nApply statistical methods to business problems\n\n\n\n\nKey Topics\n\nDescriptive Statistics\nInferential Statistics\nExcel4stats"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#instructor",
@@ -185,7 +185,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#instructors-passions-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Instructor’s Passions",
-    "text": "Instructor’s Passions\n\n\n\n\n\n\n\n\n\n\nNYT - How John Travolta Became the Star of Carnival-Video."
+    "text": "Instructor’s Passions\n\n\nNYT - How John Travolta Became the Star of Carnival-Video."
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#students",
@@ -199,14 +199,14 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#course-overview-and-logistics-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Course Overview and Logistics",
-    "text": "Course Overview and Logistics\n\nMaterials:\n\nBrightspace\nCourse Webpage\n\nSyllabus\nSchedule"
+    "text": "Course Overview and Logistics\n\nMaterials:\n\nBrightspace\nCourse Webpage\n\nSyllabus\nSlides\nSchedule"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#survey-1",
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#survey-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Survey",
-    "text": "Survey\n\n\n\n\n\n\n\n\n\n\nAttendance and Participation10 min"
+    "text": "Survey\n\n\nAttendance and Participation10 min"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#what-is-statistics-1",
@@ -234,7 +234,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#data-sources-and-scales-of-measurement",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Data Sources and Scales of Measurement",
-    "text": "Data Sources and Scales of Measurement\n\n\n\n\n\n\n\n\n\n\nElements are the entities on which data are collected.\nA variable is a characteristic of interest for the elements.\nThe set of measurements obtained for a particular element is called an observation.\nA data set with \\(n\\) elements contains \\(n\\) observations.\nThe total number of data values in a complete data set is the number of elements multiplied by the number of variables."
+    "text": "Data Sources and Scales of Measurement\n\n\nElements are the entities on which data are collected.\nA variable is a characteristic of interest for the elements.\nThe set of measurements obtained for a particular element is called an observation.\nA data set with \\(n\\) elements contains \\(n\\) observations.\nThe total number of data values in a complete data set is the number of elements multiplied by the number of variables."
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#data-types",
@@ -297,14 +297,14 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summarizing and Presenting Data",
-    "text": "Summarizing and Presenting Data\n\n\n\n\n\n\n\n\n\n\n\n\nJune 9th Apple CEO Steve Jobs - Post"
+    "text": "Summarizing and Presenting Data\n\n\n\n\nJune 9th Apple CEO Steve Jobs - Post"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data-1",
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summarizing and Presenting Data",
-    "text": "Summarizing and Presenting Data\n\n\n\n\n\n\n\n\n\n\n\nProblems with pie charts - Post"
+    "text": "Summarizing and Presenting Data\n\n\n\nProblems with pie charts - Post"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data-2",
@@ -332,7 +332,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#graphical-summary-bar-chart-or-histogram---example",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Graphical Summary: Bar Chart or Histogram - Example",
-    "text": "Graphical Summary: Bar Chart or Histogram - Example\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhudson_auto_repair.xlsx\n\n\nFile -&gt; Options -&gt; Add-ins -&gt; Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) -&gt; Go -&gt; Data -&gt; Data Analysis (to conduct analyses)"
+    "text": "Graphical Summary: Bar Chart or Histogram - Example\n\n\n\n\n\n\nhudson_auto_repair.xlsx\n\n\nFile -&gt; Options -&gt; Add-ins -&gt; Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) -&gt; Go -&gt; Data -&gt; Data Analysis (to conduct analyses)"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#graphical-summary-bar-chart-or-histogram---example-1",

@@ -81,11 +81,11 @@ knitr::include_graphics("figs/davi_moreira_photo.JPG")
 
 ## Instructor's Passions
 
-```{r  echo=FALSE, out.width = "20%", fig.align="center"}
+```{r  echo=FALSE, out.width = "15%", fig.align="center"}
 knitr::include_graphics("figs/palmeiras_logo.png") 
 ```
 
-```{r  echo=FALSE, out.width = "45%", fig.align="center"}
+```{r  echo=FALSE, out.width = "40%", fig.align="center"}
 knitr::include_graphics("figs/palmeiras_stadium.jpg") 
 ```
 
@@ -97,7 +97,9 @@ knitr::include_graphics("figs/palmeiras_stadium.jpg")
 
 </center>
 
-<br> <br>
+<br> 
+
+<br>
 
 ## Instructor's Passions
 
@@ -127,11 +129,13 @@ knitr::include_graphics("figs/carnaval_olinda.jpg")
 
     -   Brightspace
 
-    -   [Course Webpage](https://davi-moreira.github.io/2025F_business_statistics_purdue_MGMT305)
+    -   [Course Webpage](https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305)
 
--   [**Syllabus**](https://davi-moreira.github.io/2025F_business_statistics_purdue_MGMT305){target="_blank"}
+-   [**Syllabus**](https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305){target="_blank"}
 
--   [**Schedule**](https://davi-moreira.github.io/2025F_business_statistics_purdue_MGMT305){target="_blank"}
+-   [**Slides**](https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305){target="_blank"}
+
+-   [**Schedule**](https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305){target="_blank"}
 
 # Business Statistics {background-color="#cfb991"}
 
@@ -149,10 +153,10 @@ knitr::include_graphics("figs/mbs_book.png")
 ## Survey {background-color="#cfb991"}
 
 ```{r  echo=FALSE, out.width = "25%", fig.align="center"}
-knitr::include_graphics("figs/qrcode_introduction.png") 
+knitr::include_graphics("figs/qrcode_review_survey.png") 
 ```
 
-<center>Attendance and Participation<br>10 min</center>
+<center>[Attendance and Participation](https://forms.office.com/r/3R2VwPJAzA){target="_blank"}<br>10 min</center>
 
 # Motivation {background-color="#cfb991"}
 
