@@ -168,261 +168,306 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<style>
+  .overflow-table {
+    font-size: 0.85rem; /* Smaller font for compact display */
+    width: 100%; /* Ensure the table fits within page width */
+    line-height: 1.2; /* Tighter line spacing */
+  }
+  .overflow-table th, .overflow-table td {
+    padding: 0.3rem; /* Reduce padding for compact layout */
+    text-align: left; /* Left-align for readability */
+    word-wrap: break-word; /* Wrap long text within cells */
+    vertical-align: top; /* Align cell content to the top */
+  }
+  .overflow-table th:nth-child(1), .overflow-table td:nth-child(1) {
+    width: 0%; /* Increase width of the first column */
+  }
+  .below-table {
+    font-size: 0.85rem; /* Match the font size of the table */
+    line-height: 1.2; /* Match line height */
+    margin-top: 1rem; /* Add spacing above the text */
+  }
+</style>
 <div class="overflow-table">
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Date</th>
-<th>Topic</th>
-<th>Book Sections*</th>
-<th>Slides**</th>
-<th>Data</th>
-<th>Supplementary Materials</th>
+<th><strong>Week</strong></th>
+<th><strong>Day</strong></th>
+<th><strong>Date</strong></th>
+<th><strong>Topic</strong></th>
+<th><strong>Book Sections*</strong></th>
+<th><strong>Slides**</strong></th>
+<th><strong>Data</strong></th>
+<th><strong>Supplementary Materials</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Aug 19</td>
-<td>Intro. &amp; Basic Stat. &amp; Prob. Rvw.</td>
+<td><strong>1</strong></td>
+<td><strong>M</strong></td>
+<td>Jan 13</td>
+<td>Intro. &amp; Basic Stat. &amp; Prob. Review 01</td>
 <td>Syl., 1.2, 1.4, 1.5</td>
 <td><a href="./lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html" target="_blank">slides</a></td>
 <td><a href="./lecture_slides/01_chapter_data_statistics/data/hudson_auto_repair.xlsx" target="_blank">data</a></td>
-<td>- <a href="https://www.youtube.com/watch?v=MpLHMKTolVw&amp;list=PLkIselvEzpM5nFf4nu--q2OGccA_0alYO" target="_blank"><strong>Video</strong>: The NBA Data Scientist</a><br>- <a href="https://www.youtube.com/watch?v=jbkSRLYSojo&amp;list=PLkIselvEzpM5nFf4nu--q2OGccA_0alYO&amp;index=1" target="_blank"><strong>Video</strong>: Hans Rosling’s 200 Countries, 200 Years</a><br>- <a href="https://openintro-ims.netlify.app/introduction-to-data" target="_blank">IMS: Introduction to data</a></td>
+<td>- <a href="https://www.youtube.com/watch?v=MpLHMKTolVw" target="_blank"><strong>Video</strong>: The NBA Data Scientist</a><br>- <a href="https://www.youtube.com/watch?v=jbkSRLYSojo" target="_blank"><strong>Video</strong>: Hans Rosling’s 200 Countries, 200 Years</a><br>- <a href="https://openintro-ims.netlify.app/introduction-to-data" target="_blank">IMS: Introduction to data</a></td>
 </tr>
 <tr class="even">
-<td>Aug 21</td>
-<td>Basic Stat. &amp; Prob. Rvw.</td>
+<td><strong>1</strong></td>
+<td><strong>W</strong></td>
+<td>Jan 15</td>
+<td>Basic Stat. &amp; Prob. Review 02</td>
 <td>1.8, 3.3 (omit Chebyshev), 3.4, 3.5</td>
 <td><a href="./lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html" target="_blank">slides</a></td>
 <td><a href="./lecture_slides/03_chapter_descriptive_statistics/data/data.zip" target="_blank">data</a></td>
-<td>- <a href="https://www.youtube.com/watch?v=Mjif8PTgzUs&amp;list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8" target="_blank"><strong>Video</strong>: Data Basics: Observations, Variable, and Data Matrices</a><br>- <a href="https://www.youtube.com/watch?v=Xm0PPtci3JE&amp;list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8" target="_blank"><strong>Video</strong>: Summarizing and Graphing Numerical Data</a><br>- <a href="https://www.youtube.com/watch?v=7NhNeADL8fA&amp;list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8" target="_blank"><strong>Video</strong>: Exploring Categorical Data</a><br>-<a href="https://openintro-ims.netlify.app/exploratory-data-analysis" target="_blank">IMS: Exploratory data analysis</a></td>
+<td>- <a href="https://www.youtube.com/watch?v=Mjif8PTgzUs" target="_blank"><strong>Video</strong>: Data Basics</a><br>- <a href="https://www.youtube.com/watch?v=Xm0PPtci3JE" target="_blank"><strong>Video</strong>: Summarizing and Graphing Numerical Data</a><br>- <a href="https://www.youtube.com/watch?v=7NhNeADL8fA" target="_blank"><strong>Video</strong>: Exploring Categorical Data</a><br>- <a href="https://openintro-ims.netlify.app/exploratory-data-analysis" target="_blank">IMS: Exploratory data analysis</a></td>
 </tr>
 <tr class="odd">
-<td>Aug 23</td>
-<td>Basic Stat. &amp; Prob. Rvw.</td>
+<td><strong>1</strong></td>
+<td><strong>F</strong></td>
+<td>Jan 17</td>
+<td>Basic Stat. &amp; Prob. Review 03</td>
 <td>6.2, t Dist. Supplement</td>
 <td><a href="./lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html" target="_blank">slides</a></td>
 <td>.</td>
-<td>- <a href="https://www.youtube.com/watch?v=S_p5D-YXLS4&amp;list=PLkIselvEzpM6V9h55s0l9Kzivih9BUWeW" target="_blank"><strong>Video</strong>: Normal Distribution</a><br></td>
+<td>- <a href="https://www.youtube.com/watch?v=S_p5D-YXLS4" target="_blank"><strong>Video</strong>: Normal Distribution</a></td>
 </tr>
 <tr class="even">
-<td>Aug 26</td>
-<td>Int. Est. Rvw.</td>
+<td><strong>2</strong></td>
+<td><strong>M</strong></td>
+<td>Jan 20</td>
+<td>MARTIN LUTHER KING JR. DAY (No class - TBD)</td>
+<td>—</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+</tr>
+<tr class="odd">
+<td><strong>2</strong></td>
+<td><strong>W</strong></td>
+<td>Jan 22</td>
+<td>Int. Est. Review</td>
 <td>8.1, 8.2, 8.3, 8.4</td>
 <td><a href="./lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html" target="_blank">slides</a></td>
 <td>.</td>
-<td>- <a href="https://www.youtube.com/watch?v=oLW_uzkPZGA&amp;list=PLkIselvEzpM4SHQojH116fYAQJLaN_4Xo" target="_blank"><strong>Video</strong>: Point Estimates and Sampling Variability</a><br> - <a href="https://www.youtube.com/watch?v=A6_W8qY8zJo&amp;list=PLkIselvEzpM4SHQojH116fYAQJLaN_4Xo" target="_blank"><strong>Video</strong>: Confidence Intervals</a><br>- <a href="https://www.youtube.com/watch?v=_iFAZgpWsx0&amp;list=PLkIselvEzpM5Gn-sHTw1NF0e8IvMxwHDW" target="_blank"><strong>Video</strong>: Inferences for Proportions</a><br>- <a href="https://www.youtube.com/watch?v=uVEj2uBJfq0&amp;list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD" target="_blank"><strong>Video</strong>: t-distribution</a><br>- <a href="https://www.youtube.com/watch?v=RYVIGj1l4xs&amp;list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD" target="_blank"><strong>Video</strong>: Inference for one mean</a><br>- <a href="https://openintro-ims.netlify.app/foundations-mathematical" target="_blank">IMS: Inference with mathematical models</a><br>- <a href="https://openintro-ims.netlify.app/foundations-bootstrapping" target="_blank">IMS: Confidence intervals with bootstrapping</a><br> - <a href="https://openintro-ims.netlify.app/inference-one-prop" target="_blank">IMS: Inference for a single proportion</a><br> -<a href="https://openintro-ims.netlify.app/inference-one-mean" target="_blank">IMS: Inference for a single mean</a></td>
+<td>- <a href="https://www.youtube.com/watch?v=oLW_uzkPZGA" target="_blank"><strong>Video</strong>: Point Estimates</a><br>- <a href="https://www.youtube.com/watch?v=A6_W8qY8zJo" target="_blank"><strong>Video</strong>: Confidence Intervals</a><br>- <a href="https://www.youtube.com/watch?v=uVEj2uBJfq0" target="_blank"><strong>Video</strong>: t-distribution</a></td>
 </tr>
-<tr class="odd">
-<td>Aug 28</td>
-<td>Hyp. Testing Rvw.</td>
+<tr class="even">
+<td><strong>2</strong></td>
+<td><strong>F</strong></td>
+<td>Jan 24</td>
+<td>Hyp. Testing Review 01</td>
 <td>9.1, 9.2, 9.4, 9.5</td>
 <td><a href="./lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html" target="_blank">slides</a></td>
 <td>.</td>
-<td>- <a href="https://www.youtube.com/watch?v=NVbPE1_Cbx8&amp;list=PLkIselvEzpM4SHQojH116fYAQJLaN_4Xo" target="_blank"><strong>Video</strong>: Hypothesis Testing Fundamentals</a><br> - <a href="https://openintro-ims.netlify.app/foundations-randomization" target="_blank">IMS: Hypothesis testing with randomization</a><br>- <a href="https://moderndive.com/9-hypothesis-testing.html" target="_blank">MD: Hypothesis Testing</a></td>
+<td>- <a href="https://www.youtube.com/watch?v=NVbPE1_Cbx8" target="_blank"><strong>Video</strong>: Hypothesis Testing Fundamentals</a></td>
+</tr>
+<tr class="odd">
+<td><strong>2</strong></td>
+<td><strong>S</strong></td>
+<td>Jan 26</td>
+<td><strong>Homework 01 Due date</strong></td>
+<td><strong>Basic Stat. &amp; Prob. Review</strong></td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
 </tr>
 <tr class="even">
-<td>Aug 30</td>
-<td>Hyp. Testing Rvw.</td>
+<td><strong>3</strong></td>
+<td><strong>M</strong></td>
+<td>Jan 27</td>
+<td>Hyp. Testing Review 02</td>
 <td>11.1, 11.2</td>
 <td><a href="./lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html" target="_blank">slides</a></td>
 <td><a href="./lecture_slides/11_chapter_inference_pop_variance/data/data.zip" target="_blank">data</a></td>
-<td>- <a href="There is still only one test" target="_blank">Blog: There is Still Only One Test</a><br> - <a href="https://www.nature.com/articles/nature.2016.19503" target="_blank">Nature: Statisticians issue warning over misuse of P-values</a><br> - <a href="https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf">ASA: Statement on Statistical Significance and p-values</a></td>
+<td>- <a href="https://www.nature.com/articles/nature.2016.19503" target="_blank">Nature: Statisticians issue warning over misuse of P-values</a></td>
 </tr>
 <tr class="odd">
-<td><strong>Sep 1</strong></td>
-<td><strong>Homework 1 due date</strong></td>
-<td><strong>Basic Stat. &amp; Prob. Rvw.</strong></td>
-<td>.</td>
-<td>.</td>
-<td>.</td>
-</tr>
-<tr class="even">
-<td><strong>Sep 2</strong></td>
-<td><strong>Labor Day</strong></td>
-<td><strong>No class</strong></td>
-<td>.</td>
-<td>.</td>
-<td>.</td>
-</tr>
-<tr class="odd">
-<td><strong>Sep 3</strong></td>
+<td><strong>3</strong></td>
+<td><strong>W</strong></td>
+<td>Jan 29</td>
 <td><strong>Quiz 1</strong></td>
-<td><strong>Review Material (Chs. 1 – 12)</strong></td>
+<td><strong>Review Material</strong></td>
 <td>.</td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="even">
-<td><strong>Sep 4</strong></td>
-<td><strong>No class</strong></td>
-<td><strong>No class</strong></td>
-<td>.</td>
-<td>.</td>
-<td>.</td>
-</tr>
-<tr class="odd">
-<td>Sep 6</td>
+<td><strong>3</strong></td>
+<td><strong>F</strong></td>
+<td>Jan 31</td>
 <td>Analysis of Variance</td>
 <td>13.1, 13.2</td>
 <td><a href="./lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html" target="_blank">slides</a></td>
 <td><a href="./lecture_slides/13_chapter_one_way_anova/data/data.zip" target="_blank">data</a></td>
-<td>- <a href="https://www.youtube.com/watch?v=W36DMVJ4Ibo&amp;list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD&amp;index=6" target="_blank"><strong>Video</strong>: ANOVA Introduction</a><br> - <a href="https://www.youtube.com/watch?v=HGFiWMA5OC8&amp;list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD&amp;index=7" target="_blank"><strong>Video</strong>: Conditions for ANOVA</a><br> - <a href="https://www.youtube.com/watch?v=THG0P3YNbdI&amp;list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD" target="_blank"><strong>Video</strong>: Multiple comparisons</a><br> -<a href="https://openintro-ims.netlify.app/inference-many-means" target="_blank">IMS: Inference for comparing many means</a></td>
-</tr>
-<tr class="even">
-<td><strong>Sep 8</strong></td>
-<td><strong>Homework 2 due date</strong></td>
-<td><strong>Int. Est. &amp; Hyp. Testing Rvw.</strong></td>
-<td>.</td>
-<td>.</td>
-<td>.</td>
+<td>- <a href="https://www.youtube.com/watch?v=W36DMVJ4Ibo" target="_blank"><strong>Video</strong>: ANOVA Introduction</a><br>- <a href="https://www.youtube.com/watch?v=HGFiWMA5OC8" target="_blank"><strong>Video</strong>: Conditions for ANOVA</a><br>- <a href="https://www.youtube.com/watch?v=THG0P3YNbdI" target="_blank"><strong>Video</strong>: Multiple comparisons</a></td>
 </tr>
 <tr class="odd">
-<td>Sep 9</td>
+<td><strong>3</strong></td>
+<td><strong>S</strong></td>
+<td>Feb 2</td>
+<td><strong>Homework 02 Due date</strong></td>
+<td><strong>Int. Est. &amp; Hyp. Testing Review</strong></td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+</tr>
+<tr class="even">
+<td><strong>4</strong></td>
+<td><strong>M</strong></td>
+<td>Feb 3</td>
 <td>Simple Regression</td>
 <td>14.1</td>
 <td><a href="./lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html" target="_blank">slides</a></td>
 <td><a href="./lecture_slides/14_chapter_simple_regression/data/data.zip" target="_blank">data</a></td>
-<td>- <a href="https://www.youtube.com/watch?v=mPvtZhdPBhQ&amp;list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM" target="_blank"><strong>Video</strong>: Line Fitting, Residuals, and Correlation</a><br> - <a href="https://www.youtube.com/watch?v=z8DmwG2G4Qc&amp;list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM" target="_blank"><strong>Video</strong>: Fitting a Line with Least Squares Regression</a><br> - <a href="https://www.youtube.com/watch?v=yqf0L_WEaW0&amp;list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM" target="_blank"><strong>Video</strong>: Least Squares Regression</a><br> - <a href="https://www.youtube.com/watch?v=jZEKAlo1E54&amp;list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM" target="_blank"><strong>Video</strong>: Types of Outliers in Linear Regression</a><br> - <a href="https://www.youtube.com/watch?v=depiT-hTaGA&amp;list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM" target="_blank"><strong>Video</strong>: Inference for Linear Regression</a><br> -<a href="https://openintro-ims.netlify.app/model-slr" target="_blank">IMS: Linear regression with a single predictor</a><br> -<a href="https://openintro-ims.netlify.app/inf-model-slr" target="_blank">IMS: Inference for linear regression with a single predictor</a></td>
+<td>- <a href="https://www.youtube.com/watch?v=mPvtZhdPBhQ" target="_blank"><strong>Video</strong>: Line Fitting &amp; Correlation</a></td>
 </tr>
-<tr class="even">
-<td>Sep 11</td>
+<tr class="odd">
+<td><strong>4</strong></td>
+<td><strong>W</strong></td>
+<td>Feb 5</td>
 <td>Simple Regression</td>
 <td>14.2, 14.3</td>
 <td><a href="./lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
-<tr class="odd">
-<td>Sep 13</td>
+<tr class="even">
+<td><strong>4</strong></td>
+<td><strong>F</strong></td>
+<td>Feb 7</td>
 <td>Simple Regression</td>
 <td>14.4, 14.5</td>
 <td><a href="./lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
-<tr class="even">
-<td>Sep 16</td>
+<tr class="odd">
+<td><strong>5</strong></td>
+<td><strong>M</strong></td>
+<td>Feb 10</td>
 <td>Simple Regression</td>
 <td>14.6, 14.7</td>
 <td><a href="./lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
-<tr class="odd">
-<td>Sep 18</td>
+<tr class="even">
+<td><strong>5</strong></td>
+<td><strong>W</strong></td>
+<td>Feb 12</td>
 <td>Simple Regression</td>
 <td>14.8</td>
 <td><a href="./lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
-<tr class="even">
-<td>Sep 20</td>
+<tr class="odd">
+<td><strong>5</strong></td>
+<td><strong>F</strong></td>
+<td>Feb 14</td>
 <td>Simple Regression</td>
 <td>14.9</td>
 <td><a href="./lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
-<tr class="odd">
-<td><strong>Sep 22</strong></td>
-<td><strong>Homework 3 due date</strong></td>
+<tr class="even">
+<td><strong>5</strong></td>
+<td><strong>S</strong></td>
+<td>Feb 16</td>
+<td><strong>Homework 03 Due date</strong></td>
 <td><strong>Simple Regression</strong></td>
-<td></td>
-<td></td>
-<td></td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+</tr>
+<tr class="odd">
+<td><strong>6</strong></td>
+<td><strong>M</strong></td>
+<td>Feb 17</td>
+<td>Midterm 1 Review</td>
+<td>Analysis of Variance &amp; Simple Regression</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
 </tr>
 <tr class="even">
+<td><strong>6</strong></td>
+<td><strong>W</strong></td>
+<td>Feb 19</td>
+<td>Midterm 1 (TBD pm–TBD pm, TBD in class?)</td>
+<td>Analysis of Variance &amp; Simple Regression</td>
 <td>.</td>
 <td>.</td>
 <td>.</td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
-<td>Sep 23</td>
+<td><strong>6</strong></td>
+<td><strong>F</strong></td>
+<td>Feb 21</td>
 <td>Multiple Regression</td>
-<td>15.1</td>
+<td>15.1, 15.2</td>
 <td><a href="./lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html" target="_blank">slides</a></td>
 <td><a href="./lecture_slides/15_chapter_multiple_regression/data/data.zip" target="_blank">data</a></td>
-<td>- <a href="https://www.youtube.com/watch?v=sQpAuyfEYZg&amp;list=PLkIselvEzpM5f1HYzIjFt52SD4izsJ2_I" target="_blank"><strong>Video</strong>: Introduction to Multiple Regression</a><br>- <a href="https://www.youtube.com/watch?v=VB1qSwoF-l0&amp;list=PLkIselvEzpM5f1HYzIjFt52SD4izsJ2_I" target="_blank"><strong>Video</strong>: Model Selection in Multiple Regression</a><br>- <a href="https://www.youtube.com/watch?v=3KSUeYMKt5A&amp;list=PLkIselvEzpM5f1HYzIjFt52SD4izsJ2_I" target="_blank"><strong>Video</strong>: Checking Multiple Regression Diagnostics Using Graphs</a><br>-<a href="https://openintro-ims.netlify.app/model-mlr" target="_blank">IMS: Linear regression with multiple predictors</a><br>-<a href="https://openintro-ims.netlify.app/inf-model-mlr" target="_blank">IMS: Inference for linear regression with multiple predictors</a></td>
+<td>- <a href="https://www.youtube.com/watch?v=sQpAuyfEYZg" target="_blank"><strong>Video</strong>: Introduction to Multiple Regression</a></td>
 </tr>
 <tr class="even">
-<td>Sep 25</td>
+<td><strong>7</strong></td>
+<td><strong>M</strong></td>
+<td>Feb 24</td>
 <td>Multiple Regression</td>
-<td>15.2</td>
+<td>15.3</td>
 <td><a href="./lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="odd">
-<td>Sep 27</td>
+<td><strong>7</strong></td>
+<td><strong>W</strong></td>
+<td>Feb 26</td>
 <td>Multiple Regression</td>
-<td><strong>Midterm 1 Review</strong></td>
-<td>.</td>
-<td>.</td>
-<td>.</td>
-</tr>
-<tr class="even">
-<td><strong>Sep 30</strong></td>
-<td><strong>Midterm 1 (6:30 pm – 7:30 pm, UC 114)</strong></td>
-<td><strong>Analysis of Variance and Simple Regression</strong></td>
-<td>.</td>
-<td>.</td>
-<td>.</td>
-</tr>
-<tr class="odd">
-<td>Oct 2</td>
-<td>Multiple Regression</td>
-<td>15.3, 15.4</td>
+<td>15.4</td>
 <td><a href="./lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="even">
-<td>Oct 4</td>
+<td><strong>7</strong></td>
+<td><strong>F</strong></td>
+<td>Feb 28</td>
 <td>Multiple Regression</td>
-<td>15.5, 15.6</td>
+<td>15.5</td>
 <td><a href="./lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="odd">
-<td><strong>Oct 6</strong></td>
-<td><strong>Homework 4 due date</strong></td>
-<td><strong>Multiple Regression Pt. 1</strong></td>
-<td>.</td>
+<td><strong>8</strong></td>
+<td><strong>M</strong></td>
+<td>Mar 2</td>
+<td>Multiple Regression</td>
+<td>15.6</td>
+<td><a href="./lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="even">
-<td><strong>Oct 7-8</strong></td>
-<td><strong>Oct Break</strong></td>
-<td><strong>No Class</strong></td>
-<td>.</td>
-<td>.</td>
-<td>.</td>
-</tr>
-<tr class="odd">
-<td>Oct 9</td>
+<td><strong>8</strong></td>
+<td><strong>W</strong></td>
+<td>Mar 5</td>
 <td>Multiple Regression</td>
 <td>15.7</td>
 <td><a href="./lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
-<tr class="even">
-<td>Oct 11</td>
-<td>Multiple Regression</td>
-<td>15.8</td>
-<td><a href="./lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html" target="_blank">slides</a></td>
-<td>.</td>
-<td>.</td>
-</tr>
 <tr class="odd">
-<td><strong>Oct 14</strong></td>
+<td><strong>8</strong></td>
+<td><strong>F</strong></td>
+<td>Mar 7</td>
 <td><strong>Quiz 2</strong></td>
 <td><strong>Multiple Regression</strong></td>
 <td>.</td>
@@ -430,127 +475,199 @@ ul.task-list li input[type="checkbox"] {
 <td>.</td>
 </tr>
 <tr class="even">
-<td>Oct 16</td>
+<td><strong>8</strong></td>
+<td><strong>S</strong></td>
+<td>Mar 9</td>
+<td><strong>Homework 04 Due date</strong></td>
+<td><strong>Multiple Regression, Pt. 1</strong></td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+</tr>
+<tr class="odd">
+<td><strong>9</strong></td>
+<td><strong>M</strong></td>
+<td>Mar 10</td>
 <td>Model Building</td>
 <td>16.1</td>
 <td><a href="./lecture_slides/16_chapter_model_building/16_chapter_model_building.html" target="_blank">slides</a></td>
 <td><a href="./lecture_slides/16_chapter_model_building/data/data.zip" target="_blank">data</a></td>
-<td>- <a href="https://www.youtube.com/watch?v=VB1qSwoF-l0&amp;list=PLkIselvEzpM5f1HYzIjFt52SD4izsJ2_I" target="_blank"><strong>Video</strong>: Model Selection in Multiple Regression</a><br>- <a href="https://openintro-ims.netlify.app/model-mlr#sec-model-selection" target="_blank">IMS: Model Selection</a><br>- <a href="https://openintro-ims.netlify.app/inf-model-mlr#sec-inf-mult-reg-collin" target="_blank">IMS: Multicollinearity</a><br>- <a href="https://openintro-ims.netlify.app/inf-model-mlr#sec-inf-mult-reg-cv" target="_blank">IMS: Cross-validation for prediction error</a></td>
+<td>- <a href="https://www.youtube.com/watch?v=VB1qSwoF-l0" target="_blank"><strong>Video</strong>: Model Selection in Multiple Regression</a></td>
 </tr>
-<tr class="odd">
-<td>Oct 18</td>
+<tr class="even">
+<td><strong>9</strong></td>
+<td><strong>W</strong></td>
+<td>Mar 12</td>
 <td>Model Building</td>
 <td>16.2</td>
 <td><a href="./lecture_slides/16_chapter_model_building/16_chapter_model_building.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
-<tr class="even">
-<td>Oct 21</td>
+<tr class="odd">
+<td><strong>9</strong></td>
+<td><strong>F</strong></td>
+<td>Mar 14</td>
 <td>Model Building</td>
 <td>16.3, 16.4</td>
 <td><a href="./lecture_slides/16_chapter_model_building/16_chapter_model_building.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
+<tr class="even">
+<td><strong>10</strong></td>
+<td><strong>M</strong></td>
+<td>Mar 17</td>
+<td>Spring Break (No class)</td>
+<td>—</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+</tr>
 <tr class="odd">
-<td><strong>Oct 23</strong></td>
-<td><strong>Homework 5 due date</strong></td>
-<td><strong>Multiple Regression Pt.</strong> 2</td>
+<td><strong>10</strong></td>
+<td><strong>W</strong></td>
+<td>Mar 19</td>
+<td>Spring Break (No class)</td>
+<td>—</td>
 <td>.</td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="even">
-<td>Oct 23</td>
-<td>Logistic Regression</td>
-<td>Supplement in Brightspace and Slides</td>
-<td><a href="./lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html" target="_blank">slides</a></td>
+<td><strong>10</strong></td>
+<td><strong>F</strong></td>
+<td>Mar 21</td>
+<td>Spring Break (No class)</td>
+<td>—</td>
 <td>.</td>
-<td>- <a href="https://www.youtube.com/watch?v=uYC2eLVSpI8&amp;list=PLkIselvEzpM5f1HYzIjFt52SD4izsJ2_I" target="_blank"><strong>Video</strong>: Basic Ideas of Logistic Regression</a><br>- <a href="https://openintro-ims.netlify.app/model-logistic" target="_blank">IMS: Logistic regression</a><br>- <a href="https://openintro-ims.netlify.app/inf-model-logistic" target="_blank">IMS: Inference for logistic regression</a></td>
+<td>.</td>
+<td>.</td>
 </tr>
 <tr class="odd">
-<td>Oct 25</td>
+<td><strong>10</strong></td>
+<td><strong>S</strong></td>
+<td>Mar 23</td>
+<td><strong>Homework 05 Due date</strong></td>
+<td><strong>Multiple Regression, Pt. 2</strong></td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+</tr>
+<tr class="even">
+<td><strong>11</strong></td>
+<td><strong>M</strong></td>
+<td>Mar 24</td>
 <td>Logistic Regression</td>
-<td>Supplement in Brightspace and Slides</td>
+<td>Supplement in Brightspace &amp; Slides</td>
+<td><a href="./lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html" target="_blank">slides</a></td>
+<td>.</td>
+<td>- <a href="https://www.youtube.com/watch?v=uYC2eLVSpI8" target="_blank"><strong>Video</strong>: Basic Ideas of Logistic Regression</a></td>
+</tr>
+<tr class="odd">
+<td><strong>11</strong></td>
+<td><strong>W</strong></td>
+<td>Mar 26</td>
+<td>Logistic Regression</td>
+<td>Supplement in Brightspace &amp; Slides</td>
 <td><a href="./lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="even">
-<td><strong>Oct 28</strong></td>
-<td><strong>Midterm 2 Review</strong></td>
-<td><strong>Mult. Regr. Model Bldg Log. Regr.</strong></td>
-<td>.</td>
+<td><strong>11</strong></td>
+<td><strong>F</strong></td>
+<td>Mar 28</td>
+<td>Logistic Regression</td>
+<td>Supplement in Brightspace &amp; Slides</td>
+<td><a href="./lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="odd">
-<td><strong>Oct 29</strong></td>
-<td><strong>Homework 6 due date</strong></td>
+<td><strong>11</strong></td>
+<td><strong>S</strong></td>
+<td>Mar 30</td>
+<td><strong>Homework 06 Due date</strong></td>
 <td><strong>Logistic Regression</strong></td>
 <td>.</td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="even">
-<td><strong>31</strong></td>
-<td><strong>Midterm 2 (6:30 pm – 7:30 pm, UC 114)</strong></td>
-<td><strong>Mult. Regr. Model Bldg Log. Regr.</strong></td>
+<td><strong>12</strong></td>
+<td><strong>M</strong></td>
+<td>Mar 31</td>
+<td>Midterm 2 Review</td>
+<td>Mult. Regr., Model Bldg., Log. Regr.</td>
 <td>.</td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="odd">
-<td>Nov 1</td>
+<td><strong>12</strong></td>
+<td><strong>W</strong></td>
+<td>Apr 2</td>
+<td>Midterm 2 (TBD pm–TBD pm, TBD in class?)</td>
+<td>Mult. Regr., Model Bldg., Log. Regr.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+</tr>
+<tr class="even">
+<td><strong>12</strong></td>
+<td><strong>F</strong></td>
+<td>Apr 4</td>
 <td>Time Series</td>
-<td>17.1</td>
+<td>17.1, 17.2</td>
 <td><a href="./lecture_slides/17_chapter_time_series/17_chapter_time_series.html" target="_blank">slides</a></td>
 <td><a href="./lecture_slides/17_chapter_time_series/data/data.zip" target="_blank">data</a></td>
 <td><a href="https://www.youtube.com/watch?v=WU6UKKuVGY8" target="_blank"><strong>Video</strong>: Time Series Forecast Using Forecast Sheet in Excel</a></td>
 </tr>
-<tr class="even">
-<td>Nov 4</td>
-<td>Time Series</td>
-<td>17.2, 17.3</td>
-<td><a href="./lecture_slides/17_chapter_time_series/17_chapter_time_series.html" target="_blank">slides</a></td>
-<td>.</td>
-<td>.</td>
-</tr>
 <tr class="odd">
-<td>Nov 6</td>
+<td><strong>13</strong></td>
+<td><strong>M</strong></td>
+<td>Apr 7</td>
 <td>Time Series</td>
-<td>17.4, 17.5</td>
+<td>17.3</td>
 <td><a href="./lecture_slides/17_chapter_time_series/17_chapter_time_series.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="even">
-<td>Nov 8</td>
+<td><strong>13</strong></td>
+<td><strong>W</strong></td>
+<td>Apr 9</td>
 <td>Time Series</td>
-<td>17.6</td>
+<td>17.4</td>
 <td><a href="./lecture_slides/17_chapter_time_series/17_chapter_time_series.html" target="_blank">slides</a></td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="odd">
-<td><strong>Nov 10</strong></td>
-<td><strong>Homework 7 due date</strong></td>
+<td><strong>13</strong></td>
+<td><strong>F</strong></td>
+<td>Apr 11</td>
+<td>Time Series</td>
+<td>17.5, 17.6</td>
+<td><a href="./lecture_slides/17_chapter_time_series/17_chapter_time_series.html" target="_blank">slides</a></td>
+<td>.</td>
+<td>.</td>
+</tr>
+<tr class="even">
+<td><strong>13</strong></td>
+<td><strong>S</strong></td>
+<td>Apr 13</td>
+<td><strong>Homework 07 Due date</strong></td>
 <td><strong>Time Series</strong></td>
 <td>.</td>
 <td>.</td>
 <td>.</td>
 </tr>
-<tr class="even">
-<td><strong>Nov 11</strong></td>
-<td><strong>No class</strong></td>
-<td><strong>No class</strong></td>
-<td>.</td>
-<td>.</td>
-<td>.</td>
-</tr>
 <tr class="odd">
-<td><strong>Nov 12</strong></td>
+<td><strong>14</strong></td>
+<td><strong>M</strong></td>
+<td>Apr 14</td>
 <td><strong>Quiz 3</strong></td>
 <td><strong>Time Series</strong></td>
 <td>.</td>
@@ -558,7 +675,9 @@ ul.task-list li input[type="checkbox"] {
 <td>.</td>
 </tr>
 <tr class="even">
-<td>Nov 13</td>
+<td><strong>14</strong></td>
+<td><strong>W</strong></td>
+<td>Apr 16</td>
 <td>Quality Control</td>
 <td>19.1</td>
 <td><a href="./lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html" target="_blank">slides</a></td>
@@ -566,7 +685,9 @@ ul.task-list li input[type="checkbox"] {
 <td>.</td>
 </tr>
 <tr class="odd">
-<td>Nov 15</td>
+<td><strong>14</strong></td>
+<td><strong>F</strong></td>
+<td>Apr 18</td>
 <td>Quality Control</td>
 <td>19.2, 19.3</td>
 <td><a href="./lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html" target="_blank">slides</a></td>
@@ -574,15 +695,19 @@ ul.task-list li input[type="checkbox"] {
 <td>.</td>
 </tr>
 <tr class="even">
-<td>Nov 18</td>
+<td><strong>15</strong></td>
+<td><strong>M</strong></td>
+<td>Apr 21</td>
 <td>Decision Analysis</td>
 <td>20.1</td>
 <td><a href="./lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html" target="_blank">slides</a></td>
 <td>.</td>
-<td><a href="https://www.youtube.com/watch?v=HZGCoVF3YvM" target="_blank"><strong>Video</strong>: Bayes theorem, the geometry of changing beliefs</a></td>
+<td>- <a href="https://www.youtube.com/watch?v=HZGCoVF3YvM" target="_blank"><strong>Video</strong>: Bayes theorem</a></td>
 </tr>
 <tr class="odd">
-<td>Nov 20</td>
+<td><strong>15</strong></td>
+<td><strong>W</strong></td>
+<td>Apr 23</td>
 <td>Decision Analysis</td>
 <td>20.2</td>
 <td><a href="./lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html" target="_blank">slides</a></td>
@@ -590,7 +715,9 @@ ul.task-list li input[type="checkbox"] {
 <td>.</td>
 </tr>
 <tr class="even">
-<td>Nov 22</td>
+<td><strong>15</strong></td>
+<td><strong>F</strong></td>
+<td>Apr 25</td>
 <td>Decision Analysis</td>
 <td>20.3, 20.4</td>
 <td><a href="./lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html" target="_blank">slides</a></td>
@@ -598,31 +725,19 @@ ul.task-list li input[type="checkbox"] {
 <td>.</td>
 </tr>
 <tr class="odd">
-<td>Nov 25</td>
-<td>Asynchronous Class</td>
-<td>Video or set of videos and activity.</td>
-<td>Posted at Brightspace.</td>
-<td>.</td>
-<td>.</td>
-</tr>
-<tr class="even">
-<td><strong>Nov 27-30</strong></td>
-<td><strong>Thanksgiving Break</strong></td>
-<td><strong>No Class</strong></td>
-<td>.</td>
-<td>.</td>
-<td>.</td>
-</tr>
-<tr class="odd">
-<td><strong>Dec 1</strong></td>
-<td><strong>Homework 8 due date</strong></td>
-<td><strong>Quality Control and Decision Analysis</strong></td>
+<td><strong>15</strong></td>
+<td><strong>S</strong></td>
+<td>Apr 27</td>
+<td><strong>Homework 08 Due date</strong></td>
+<td><strong>Quality Control &amp; Decision Analysis</strong></td>
 <td>.</td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="even">
-<td>Dec 2</td>
+<td><strong>16</strong></td>
+<td><strong>M</strong></td>
+<td>Apr 28</td>
 <td>Final Exam Review</td>
 <td>Cumulative</td>
 <td>.</td>
@@ -630,7 +745,9 @@ ul.task-list li input[type="checkbox"] {
 <td>.</td>
 </tr>
 <tr class="odd">
-<td>Dec 4</td>
+<td><strong>16</strong></td>
+<td><strong>W</strong></td>
+<td>Apr 30</td>
 <td>Final Exam Review</td>
 <td>Cumulative</td>
 <td>.</td>
@@ -638,16 +755,20 @@ ul.task-list li input[type="checkbox"] {
 <td>.</td>
 </tr>
 <tr class="even">
-<td><strong>Dec 6</strong></td>
-<td><strong>Final Exam Preparation</strong></td>
-<td><strong>No Class</strong></td>
+<td><strong>16</strong></td>
+<td><strong>F</strong></td>
+<td>May 2</td>
+<td>Final Exam Preparation</td>
+<td>No class</td>
 <td>.</td>
 <td>.</td>
 <td>.</td>
 </tr>
 <tr class="odd">
-<td><strong>TBD</strong></td>
-<td><strong>Final Exam</strong></td>
+<td><strong>17</strong></td>
+<td>—</td>
+<td>TBD</td>
+<td><strong>Final Exam (TBD pm–TBD pm, TBD)</strong></td>
 <td><strong>Cumulative</strong></td>
 <td>.</td>
 <td>.</td>

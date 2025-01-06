@@ -13,11 +13,15 @@ _This document does not replace the official information in the course brightspa
 </center>
 <br>
 
-## Course Description
+### Course Description and Objectives
 
-This course is designed to introduce students to basic data analysis techniques.  Coverage will include the application of probability distributions such as the normal, the $t$, and the binomial; sampling distributions, basic statistical inference methods, analysis of variance, applied linear regression techniques, logistic regression time series analysis, statistical quality control, and decision analysis.
+This course is designed to introduce students to basic data analysis techniques. Coverage includes the application of probability distributions (normal, $t$, binomial), sampling distributions, basic statistical inference methods, analysis of variance, applied linear regression techniques, logistic regression, time series analysis, statistical quality control, and decision analysis.
 
-**Course Website**: <https://davi-moreira.github.io/2025F_business_statistics_purdue_MGMT305>{target="_blank"}
+Our main goal is to instill the basic quantitative and data analysis skills needed by managers in modern business, where Business Analytics and Data Science have become essential. These skills will aid in data-driven decision-making, risk assessments, and policy formulation, and will enable managers to collaborate effectively with data analysis teams to enhance business performance.
+
+Since modern data analysis is primarily performed using computers and various sophisticated software, this course will also emphasize software applications (such as Minitab, R, or Python). However, Microsoft Excel is the primary software tool demonstrated in this course.
+
+**Course Website**: <https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305/>{target="_blank"}
 
 ### Instructor: [Professor Davi Moreira](https://davi-moreira.github.io)
 
@@ -25,28 +29,39 @@ This course is designed to introduce students to basic data analysis techniques.
 -   Virtual Office hours: _Zoom link in your Course Brightspace Page_
 -   Individual Appointments: _Book time with me through the link in the course syllabus on your Course Brightspace Page or by appointment._
 
-## Learning Outcomes
+### Learning Outcomes
 
 By the end of this course, students will be able to:
 
-1.	Understand the basic statistical principles and their applications in the area of management and business.
-2.	Understand fundamental issues in business and management.
-3.	Describe and use the commonly used statistical techniques for analyzing business data.
-4.	Understand the impacts of recent developments in big data and AI in business and management.
-5.	Be proficient in using Excel to carry out statistical and analytics methods covered in the course.
+1. Understand the basic statistical principles and their applications in the area of management and business.  
+2. Understand fundamental issues in business and management.  
+3. Describe and use the commonly used statistical techniques for analyzing business data.  
+4. Understand the impacts of recent developments in big data and AI in business and management.  
+5. Be proficient in using Excel to carry out statistical and analytics methods covered in the course.  
 
-## Objective
+### Prerequisite
 
-Our main goal is to instill the basic quantitative and data analysis skills needed by managers in modern business, where Business Analytics and Data Science have become important. These skills will help managers to understand and carry out data-based decision making, risk assessments, and policy making and to work effectively with data analysis teams to improve all aspects of business performance.  
-	
-Modern data analysis is done using computers and various types of sophisticated software. Therefore, to most effectively introduce management candidates to its techniques, we will also emphasize software applications (with Microsoft Excel, R, or Python) in this course.   
+- **STAT 30301**: Probability and Statistics for Business.
 
 ### Course Materials
 
-The following are learning materials:
+- **Textbook**:  
+  Anderson, Sweeney, Williams, Camn, Cochran, Fry, and Ohlmann.  
+  *Modern Business Statistics with Microsoft Excel*, 7th Edition, 2020, Cengage Learning, Inc.  
+  (Required; also used in STAT 30301)
 
-1. Text book:  Anderson, Sweeney, Williams, Camn, Cochran, Fry, and Ohlmann: Modern Business Statistics with Microsoft Excel, 7th edition, 2018, Cengage Learning, Inc. (Required)  This text is also used in STAT 30301.
-2. Handouts:  Lecture Slides and Supplementary Materials. (Posted in this page and on Brightspace: Brightspace -> Content -> Table of Contents -> ….)
+- **Handouts**:  
+  Lecture Slides and Supplementary Materials (available on Brightspace).  
+  The E-Book and handouts are located in Brightspace → Content → Table of Contents → …
+
+- **Computing**:  
+  Quizzes will be administered in-person, and you will need to work on practice exercises in class. You should have access to a PC, Mac, or tablet.
+
+- **Software**:  
+  Microsoft Excel is used for in-class demonstrations. Ensure the “Data Analysis” ToolPak is enabled:  
+  1. `File -> Options -> Add-ins`  
+  2. Select **Analysis ToolPak** and **Analysis ToolPak-VBA** → `Go`  
+  3. **Data** → **Data Analysis** (for Excel-based analyses)  
 
 ### Course Infra-structure
 

@@ -54,7 +54,7 @@
     "href": "syllabus.html#learning-outcomes",
     "title": "Syllabus",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy the end of this course, students will be able to:\n\nUnderstand the basic statistical principles and their applications in the area of management and business.\nUnderstand fundamental issues in business and management.\nDescribe and use the commonly used statistical techniques for analyzing business data.\nUnderstand the impacts of recent developments in big data and AI in business and management.\nBe proficient in using Excel to carry out statistical and analytics methods covered in the course.",
+    "text": "Learning Outcomes\nBy the end of this course, students will be able to:\n\nUnderstand the basic statistical principles and their applications in the area of management and business.\n\nUnderstand fundamental issues in business and management.\n\nDescribe and use the commonly used statistical techniques for analyzing business data.\n\nUnderstand the impacts of recent developments in big data and AI in business and management.\n\nBe proficient in using Excel to carry out statistical and analytics methods covered in the course.",
     "crumbs": [
       "Syllabus"
     ]
@@ -74,7 +74,7 @@
     "href": "syllabus.html#course-materials",
     "title": "Syllabus",
     "section": "Course Materials",
-    "text": "Course Materials\n\nTextbook: Anderson, Sweeney, Williams, Camn, Cochran, Fry, and Ohlmann: Modern Business Statistics with Microsoft Excel, 7th edition, 2020, Cengage Learning, Inc. (Required). This text is also used in STAT 30301.\nHandouts: Lecture slides and supplementary materials. These are posted on Brightspace (Brightspace -&gt; Content -&gt; Table of Contents -&gt; ….)",
+    "text": "Course Materials\n\nTextbook\n\nAnderson, Sweeney, Williams, Camn, Cochran, Fry, and Ohlmann (2020).\nModern Business Statistics with Microsoft Excel (7th edition). Cengage Learning, Inc.\n– Required textbook, also used in STAT 30301.\n\nHandouts\n\nPresentation slides and supplementary materials posted on Brightspace:\nBrightspace → Content → Table of Contents → …\n\nComputing Requirements\n\nYou must have access to a PC, Mac, or tablet equipped with a webcam to complete in-class quizzes and practice exercises.\n\nSoftware\n\nMicrosoft Excel will be used for in-class demonstrations.\n\nTo enable Excel’s “Data Analysis” ToolPak:\n\nFile → Options → Add-ins\n\nSelect Analysis ToolPak and Analysis ToolPak-VBA (also StatTools 7.5 if available) → Go\n\nReturn to Data tab → Data Analysis\n## Course Infrastructure\n\n\n\n\nBrightspace: The Course Brightspace Page (https://purdue.brightspace.com/) should be checked on a regular basis for announcements and course material.\nSoftware: Microsoft Excel will be used for in-class demonstrations and instruction. The main tool is Data Analysis under Tools. If you don’t see this tool, follow these steps to add it in:\n\nFile &gt; Options &gt; Add-ins &gt; Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) &gt; Go &gt; Data &gt; Data Analysis (to conduct analyses)\n\nCourse Website: This class website will be used throughout the course, but it does not replace the Course Brightspace Page.",
     "crumbs": [
       "Syllabus"
     ]
@@ -124,7 +124,7 @@
     "href": "syllabus.html#additional-information",
     "title": "Syllabus",
     "section": "Additional Information",
-    "text": "Additional Information\nRefer to Brightspace for deadlines, academic integrity policies, accommodations, CAPS information, and non-discrimination statements.",
+    "text": "Additional Information\nRefer to Brightspace for deadlines, academic integrity policies, accommodations, CAPS information, and non-discrimination statements.\n\n_**Subject to Change Policy: While we will endeavor to maintain the course schedule, the syllabus may be adjusted to accommodate the learning pace and needs of the class._",
     "crumbs": [
       "Syllabus"
     ]
@@ -154,7 +154,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Date\nTopic\nBook Sections*\nSlides**\nData\nSupplementary Materials\n\n\n\n\nAug 19\nIntro. & Basic Stat. & Prob. Rvw.\nSyl., 1.2, 1.4, 1.5\nslides\ndata\n- Video: The NBA Data Scientist- Video: Hans Rosling’s 200 Countries, 200 Years- IMS: Introduction to data\n\n\nAug 21\nBasic Stat. & Prob. Rvw.\n1.8, 3.3 (omit Chebyshev), 3.4, 3.5\nslides\ndata\n- Video: Data Basics: Observations, Variable, and Data Matrices- Video: Summarizing and Graphing Numerical Data- Video: Exploring Categorical Data-IMS: Exploratory data analysis\n\n\nAug 23\nBasic Stat. & Prob. Rvw.\n6.2, t Dist. Supplement\nslides\n.\n- Video: Normal Distribution\n\n\nAug 26\nInt. Est. Rvw.\n8.1, 8.2, 8.3, 8.4\nslides\n.\n- Video: Point Estimates and Sampling Variability - Video: Confidence Intervals- Video: Inferences for Proportions- Video: t-distribution- Video: Inference for one mean- IMS: Inference with mathematical models- IMS: Confidence intervals with bootstrapping - IMS: Inference for a single proportion -IMS: Inference for a single mean\n\n\nAug 28\nHyp. Testing Rvw.\n9.1, 9.2, 9.4, 9.5\nslides\n.\n- Video: Hypothesis Testing Fundamentals - IMS: Hypothesis testing with randomization- MD: Hypothesis Testing\n\n\nAug 30\nHyp. Testing Rvw.\n11.1, 11.2\nslides\ndata\n- Blog: There is Still Only One Test - Nature: Statisticians issue warning over misuse of P-values - ASA: Statement on Statistical Significance and p-values\n\n\nSep 1\nHomework 1 due date\nBasic Stat. & Prob. Rvw.\n.\n.\n.\n\n\nSep 2\nLabor Day\nNo class\n.\n.\n.\n\n\nSep 3\nQuiz 1\nReview Material (Chs. 1 – 12)\n.\n.\n.\n\n\nSep 4\nNo class\nNo class\n.\n.\n.\n\n\nSep 6\nAnalysis of Variance\n13.1, 13.2\nslides\ndata\n- Video: ANOVA Introduction - Video: Conditions for ANOVA - Video: Multiple comparisons -IMS: Inference for comparing many means\n\n\nSep 8\nHomework 2 due date\nInt. Est. & Hyp. Testing Rvw.\n.\n.\n.\n\n\nSep 9\nSimple Regression\n14.1\nslides\ndata\n- Video: Line Fitting, Residuals, and Correlation - Video: Fitting a Line with Least Squares Regression - Video: Least Squares Regression - Video: Types of Outliers in Linear Regression - Video: Inference for Linear Regression -IMS: Linear regression with a single predictor -IMS: Inference for linear regression with a single predictor\n\n\nSep 11\nSimple Regression\n14.2, 14.3\nslides\n.\n.\n\n\nSep 13\nSimple Regression\n14.4, 14.5\nslides\n.\n.\n\n\nSep 16\nSimple Regression\n14.6, 14.7\nslides\n.\n.\n\n\nSep 18\nSimple Regression\n14.8\nslides\n.\n.\n\n\nSep 20\nSimple Regression\n14.9\nslides\n.\n.\n\n\nSep 22\nHomework 3 due date\nSimple Regression\n\n\n\n\n\n.\n.\n.\n\n\n\n\n\nSep 23\nMultiple Regression\n15.1\nslides\ndata\n- Video: Introduction to Multiple Regression- Video: Model Selection in Multiple Regression- Video: Checking Multiple Regression Diagnostics Using Graphs-IMS: Linear regression with multiple predictors-IMS: Inference for linear regression with multiple predictors\n\n\nSep 25\nMultiple Regression\n15.2\nslides\n.\n.\n\n\nSep 27\nMultiple Regression\nMidterm 1 Review\n.\n.\n.\n\n\nSep 30\nMidterm 1 (6:30 pm – 7:30 pm, UC 114)\nAnalysis of Variance and Simple Regression\n.\n.\n.\n\n\nOct 2\nMultiple Regression\n15.3, 15.4\nslides\n.\n.\n\n\nOct 4\nMultiple Regression\n15.5, 15.6\nslides\n.\n.\n\n\nOct 6\nHomework 4 due date\nMultiple Regression Pt. 1\n.\n.\n.\n\n\nOct 7-8\nOct Break\nNo Class\n.\n.\n.\n\n\nOct 9\nMultiple Regression\n15.7\nslides\n.\n.\n\n\nOct 11\nMultiple Regression\n15.8\nslides\n.\n.\n\n\nOct 14\nQuiz 2\nMultiple Regression\n.\n.\n.\n\n\nOct 16\nModel Building\n16.1\nslides\ndata\n- Video: Model Selection in Multiple Regression- IMS: Model Selection- IMS: Multicollinearity- IMS: Cross-validation for prediction error\n\n\nOct 18\nModel Building\n16.2\nslides\n.\n.\n\n\nOct 21\nModel Building\n16.3, 16.4\nslides\n.\n.\n\n\nOct 23\nHomework 5 due date\nMultiple Regression Pt. 2\n.\n.\n.\n\n\nOct 23\nLogistic Regression\nSupplement in Brightspace and Slides\nslides\n.\n- Video: Basic Ideas of Logistic Regression- IMS: Logistic regression- IMS: Inference for logistic regression\n\n\nOct 25\nLogistic Regression\nSupplement in Brightspace and Slides\nslides\n.\n.\n\n\nOct 28\nMidterm 2 Review\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nOct 29\nHomework 6 due date\nLogistic Regression\n.\n.\n.\n\n\n31\nMidterm 2 (6:30 pm – 7:30 pm, UC 114)\nMult. Regr. Model Bldg Log. Regr.\n.\n.\n.\n\n\nNov 1\nTime Series\n17.1\nslides\ndata\nVideo: Time Series Forecast Using Forecast Sheet in Excel\n\n\nNov 4\nTime Series\n17.2, 17.3\nslides\n.\n.\n\n\nNov 6\nTime Series\n17.4, 17.5\nslides\n.\n.\n\n\nNov 8\nTime Series\n17.6\nslides\n.\n.\n\n\nNov 10\nHomework 7 due date\nTime Series\n.\n.\n.\n\n\nNov 11\nNo class\nNo class\n.\n.\n.\n\n\nNov 12\nQuiz 3\nTime Series\n.\n.\n.\n\n\nNov 13\nQuality Control\n19.1\nslides\n.\n.\n\n\nNov 15\nQuality Control\n19.2, 19.3\nslides\n.\n.\n\n\nNov 18\nDecision Analysis\n20.1\nslides\n.\nVideo: Bayes theorem, the geometry of changing beliefs\n\n\nNov 20\nDecision Analysis\n20.2\nslides\n.\n.\n\n\nNov 22\nDecision Analysis\n20.3, 20.4\nslides\n.\n.\n\n\nNov 25\nAsynchronous Class\nVideo or set of videos and activity.\nPosted at Brightspace.\n.\n.\n\n\nNov 27-30\nThanksgiving Break\nNo Class\n.\n.\n.\n\n\nDec 1\nHomework 8 due date\nQuality Control and Decision Analysis\n.\n.\n.\n\n\nDec 2\nFinal Exam Review\nCumulative\n.\n.\n.\n\n\nDec 4\nFinal Exam Review\nCumulative\n.\n.\n.\n\n\nDec 6\nFinal Exam Preparation\nNo Class\n.\n.\n.\n\n\nTBD\nFinal Exam\nCumulative\n.\n.\n.\n\n\n\n\n*Section Numbers refer to sections in the course textbook.\n** Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.",
+    "text": "Week\nDay\nDate\nTopic\nBook Sections*\nSlides**\nData\nSupplementary Materials\n\n\n\n\n1\nM\nJan 13\nIntro. & Basic Stat. & Prob. Review 01\nSyl., 1.2, 1.4, 1.5\nslides\ndata\n- Video: The NBA Data Scientist- Video: Hans Rosling’s 200 Countries, 200 Years- IMS: Introduction to data\n\n\n1\nW\nJan 15\nBasic Stat. & Prob. Review 02\n1.8, 3.3 (omit Chebyshev), 3.4, 3.5\nslides\ndata\n- Video: Data Basics- Video: Summarizing and Graphing Numerical Data- Video: Exploring Categorical Data- IMS: Exploratory data analysis\n\n\n1\nF\nJan 17\nBasic Stat. & Prob. Review 03\n6.2, t Dist. Supplement\nslides\n.\n- Video: Normal Distribution\n\n\n2\nM\nJan 20\nMARTIN LUTHER KING JR. DAY (No class - TBD)\n—\n.\n.\n.\n\n\n2\nW\nJan 22\nInt. Est. Review\n8.1, 8.2, 8.3, 8.4\nslides\n.\n- Video: Point Estimates- Video: Confidence Intervals- Video: t-distribution\n\n\n2\nF\nJan 24\nHyp. Testing Review 01\n9.1, 9.2, 9.4, 9.5\nslides\n.\n- Video: Hypothesis Testing Fundamentals\n\n\n2\nS\nJan 26\nHomework 01 Due date\nBasic Stat. & Prob. Review\n.\n.\n.\n\n\n3\nM\nJan 27\nHyp. Testing Review 02\n11.1, 11.2\nslides\ndata\n- Nature: Statisticians issue warning over misuse of P-values\n\n\n3\nW\nJan 29\nQuiz 1\nReview Material\n.\n.\n.\n\n\n3\nF\nJan 31\nAnalysis of Variance\n13.1, 13.2\nslides\ndata\n- Video: ANOVA Introduction- Video: Conditions for ANOVA- Video: Multiple comparisons\n\n\n3\nS\nFeb 2\nHomework 02 Due date\nInt. Est. & Hyp. Testing Review\n.\n.\n.\n\n\n4\nM\nFeb 3\nSimple Regression\n14.1\nslides\ndata\n- Video: Line Fitting & Correlation\n\n\n4\nW\nFeb 5\nSimple Regression\n14.2, 14.3\nslides\n.\n.\n\n\n4\nF\nFeb 7\nSimple Regression\n14.4, 14.5\nslides\n.\n.\n\n\n5\nM\nFeb 10\nSimple Regression\n14.6, 14.7\nslides\n.\n.\n\n\n5\nW\nFeb 12\nSimple Regression\n14.8\nslides\n.\n.\n\n\n5\nF\nFeb 14\nSimple Regression\n14.9\nslides\n.\n.\n\n\n5\nS\nFeb 16\nHomework 03 Due date\nSimple Regression\n.\n.\n.\n\n\n6\nM\nFeb 17\nMidterm 1 Review\nAnalysis of Variance & Simple Regression\n.\n.\n.\n\n\n6\nW\nFeb 19\nMidterm 1 (TBD pm–TBD pm, TBD in class?)\nAnalysis of Variance & Simple Regression\n.\n.\n.\n\n\n6\nF\nFeb 21\nMultiple Regression\n15.1, 15.2\nslides\ndata\n- Video: Introduction to Multiple Regression\n\n\n7\nM\nFeb 24\nMultiple Regression\n15.3\nslides\n.\n.\n\n\n7\nW\nFeb 26\nMultiple Regression\n15.4\nslides\n.\n.\n\n\n7\nF\nFeb 28\nMultiple Regression\n15.5\nslides\n.\n.\n\n\n8\nM\nMar 2\nMultiple Regression\n15.6\nslides\n.\n.\n\n\n8\nW\nMar 5\nMultiple Regression\n15.7\nslides\n.\n.\n\n\n8\nF\nMar 7\nQuiz 2\nMultiple Regression\n.\n.\n.\n\n\n8\nS\nMar 9\nHomework 04 Due date\nMultiple Regression, Pt. 1\n.\n.\n.\n\n\n9\nM\nMar 10\nModel Building\n16.1\nslides\ndata\n- Video: Model Selection in Multiple Regression\n\n\n9\nW\nMar 12\nModel Building\n16.2\nslides\n.\n.\n\n\n9\nF\nMar 14\nModel Building\n16.3, 16.4\nslides\n.\n.\n\n\n10\nM\nMar 17\nSpring Break (No class)\n—\n.\n.\n.\n\n\n10\nW\nMar 19\nSpring Break (No class)\n—\n.\n.\n.\n\n\n10\nF\nMar 21\nSpring Break (No class)\n—\n.\n.\n.\n\n\n10\nS\nMar 23\nHomework 05 Due date\nMultiple Regression, Pt. 2\n.\n.\n.\n\n\n11\nM\nMar 24\nLogistic Regression\nSupplement in Brightspace & Slides\nslides\n.\n- Video: Basic Ideas of Logistic Regression\n\n\n11\nW\nMar 26\nLogistic Regression\nSupplement in Brightspace & Slides\nslides\n.\n.\n\n\n11\nF\nMar 28\nLogistic Regression\nSupplement in Brightspace & Slides\nslides\n.\n.\n\n\n11\nS\nMar 30\nHomework 06 Due date\nLogistic Regression\n.\n.\n.\n\n\n12\nM\nMar 31\nMidterm 2 Review\nMult. Regr., Model Bldg., Log. Regr.\n.\n.\n.\n\n\n12\nW\nApr 2\nMidterm 2 (TBD pm–TBD pm, TBD in class?)\nMult. Regr., Model Bldg., Log. Regr.\n.\n.\n.\n\n\n12\nF\nApr 4\nTime Series\n17.1, 17.2\nslides\ndata\nVideo: Time Series Forecast Using Forecast Sheet in Excel\n\n\n13\nM\nApr 7\nTime Series\n17.3\nslides\n.\n.\n\n\n13\nW\nApr 9\nTime Series\n17.4\nslides\n.\n.\n\n\n13\nF\nApr 11\nTime Series\n17.5, 17.6\nslides\n.\n.\n\n\n13\nS\nApr 13\nHomework 07 Due date\nTime Series\n.\n.\n.\n\n\n14\nM\nApr 14\nQuiz 3\nTime Series\n.\n.\n.\n\n\n14\nW\nApr 16\nQuality Control\n19.1\nslides\n.\n.\n\n\n14\nF\nApr 18\nQuality Control\n19.2, 19.3\nslides\n.\n.\n\n\n15\nM\nApr 21\nDecision Analysis\n20.1\nslides\n.\n- Video: Bayes theorem\n\n\n15\nW\nApr 23\nDecision Analysis\n20.2\nslides\n.\n.\n\n\n15\nF\nApr 25\nDecision Analysis\n20.3, 20.4\nslides\n.\n.\n\n\n15\nS\nApr 27\nHomework 08 Due date\nQuality Control & Decision Analysis\n.\n.\n.\n\n\n16\nM\nApr 28\nFinal Exam Review\nCumulative\n.\n.\n.\n\n\n16\nW\nApr 30\nFinal Exam Review\nCumulative\n.\n.\n.\n\n\n16\nF\nMay 2\nFinal Exam Preparation\nNo class\n.\n.\n.\n\n\n17\n—\nTBD\nFinal Exam (TBD pm–TBD pm, TBD)\nCumulative\n.\n.\n.\n\n\n\n\n*Section Numbers refer to sections in the course textbook.\n** Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.",
     "crumbs": [
       "Schedule"
     ]
@@ -163,8 +163,8 @@
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#overview",
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#overview",
     "title": " MGMT 30500: Business Statistics ",
-    "section": "Overview",
-    "text": "Overview\n\n\n\n\nIntroductions\nCourse Overview and Logistics\nMotivation\nCourse Objectives\n\nUnderstand basic statistical concepts\nApply statistical methods to business problems\n\n\n\n\nKey Topics\n\nDescriptive Statistics\nInferential Statistics\nExcel4stats"
+    "section": "",
+    "text": "Introductions\nCourse Overview and Logistics\nMotivation\nCourse Objectives\n\nUnderstand basic statistical concepts\nApply statistical methods to business problems\n\n\n\n\nKey Topics\n\nDescriptive Statistics\nInferential Statistics\nExcel4stats"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#instructor",
@@ -185,7 +185,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#instructors-passions-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Instructor’s Passions",
-    "text": "Instructor’s Passions\n\n\nNYT - How John Travolta Became the Star of Carnival-Video."
+    "text": "Instructor’s Passions\n\n\n\n\n\n\n\n\n\n\nNYT - How John Travolta Became the Star of Carnival-Video."
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#students",
@@ -206,7 +206,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#survey-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Survey",
-    "text": "Survey\n\n\nAttendance and Participation10 min"
+    "text": "Survey\n\n\n\n\n\n\n\n\n\n\nAttendance and Participation10 min"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#what-is-statistics-1",
@@ -234,7 +234,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#data-sources-and-scales-of-measurement",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Data Sources and Scales of Measurement",
-    "text": "Data Sources and Scales of Measurement\n\n\nElements are the entities on which data are collected.\nA variable is a characteristic of interest for the elements.\nThe set of measurements obtained for a particular element is called an observation.\nA data set with \\(n\\) elements contains \\(n\\) observations.\nThe total number of data values in a complete data set is the number of elements multiplied by the number of variables."
+    "text": "Data Sources and Scales of Measurement\n\n\n\n\n\n\n\n\n\n\nElements are the entities on which data are collected.\nA variable is a characteristic of interest for the elements.\nThe set of measurements obtained for a particular element is called an observation.\nA data set with \\(n\\) elements contains \\(n\\) observations.\nThe total number of data values in a complete data set is the number of elements multiplied by the number of variables."
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#data-types",
@@ -297,14 +297,14 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summarizing and Presenting Data",
-    "text": "Summarizing and Presenting Data\n\n\n\n\nJune 9th Apple CEO Steve Jobs - Post"
+    "text": "Summarizing and Presenting Data\n\n\n\n\n\n\n\n\n\n\n\n\nJune 9th Apple CEO Steve Jobs - Post"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data-1",
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summarizing and Presenting Data",
-    "text": "Summarizing and Presenting Data\n\n\n\nProblems with pie charts - Post"
+    "text": "Summarizing and Presenting Data\n\n\n\n\n\n\n\n\n\n\n\nProblems with pie charts - Post"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#summarizing-and-presenting-data-2",
@@ -332,7 +332,7 @@
     "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#graphical-summary-bar-chart-or-histogram---example",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Graphical Summary: Bar Chart or Histogram - Example",
-    "text": "Graphical Summary: Bar Chart or Histogram - Example\n\n\n\n\n\n\nhudson_auto_repair.xlsx\n\n\nFile -&gt; Options -&gt; Add-ins -&gt; Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) -&gt; Go -&gt; Data -&gt; Data Analysis (to conduct analyses)"
+    "text": "Graphical Summary: Bar Chart or Histogram - Example\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhudson_auto_repair.xlsx\n\n\nFile -&gt; Options -&gt; Add-ins -&gt; Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) -&gt; Go -&gt; Data -&gt; Data Analysis (to conduct analyses)"
   },
   {
     "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html#graphical-summary-bar-chart-or-histogram---example-1",
@@ -5240,5 +5240,62 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
     "text": "Summary\n\n\n\n\n\n\n\n\n\nTerm\nDefinition\nPurpose\nExample\n\n\n\n\nPayoff\nQuantitative value of profit/loss for a decision-state combination\nUsed to evaluate and compare decision alternatives\nBuilding a large complex yields $20 million if demand is high.\n\n\nResults\nActual effects observed after decision and state of nature occur\nEvaluate real-world effectiveness of decision\nMedium complex yields a realized profit of $14 million.\n\n\nOutputs\nImmediate, measurable consequences from the decision\nProvide operational metrics\nNumber of units built, time to completion, occupancy rate.\n\n\nOutcomes\nBroader end results, often aligned with goals/objectives\nAssess decision’s success in achieving goals\nProfit, market reputation, customer satisfaction, future demand"
+  },
+  {
+    "objectID": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html",
+    "href": "lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "",
+    "text": "Introductions\nCourse Overview and Logistics\nMotivation\nCourse Objectives\n\nUnderstand basic statistical concepts\nApply statistical methods to business problems\n\n\n\n\nKey Topics\n\nDescriptive Statistics\nInferential Statistics\nExcel4stats"
+  },
+  {
+    "objectID": "syllabus.html#course-description-and-objectives",
+    "href": "syllabus.html#course-description-and-objectives",
+    "title": "Syllabus",
+    "section": "Course Description and Objectives",
+    "text": "Course Description and Objectives\nThis course is designed to introduce students to basic data analysis techniques, including applications of probability distributions (normal, (t), binomial), sampling distributions, basic statistical inference methods, analysis of variance, applied linear regression techniques, logistic regression, time series analysis, statistical quality control, and decision analysis.\nOur primary goal is to instill in students the quantitative and data analysis skills essential in modern business, where Business Analytics and Data Science are increasingly important. These skills will empower managers to make data-based decisions, perform risk assessments, develop policies, and collaborate effectively with analytics teams to boost business performance.\nBecause modern data analysis relies heavily on computers and software, we will emphasize practical applications using Microsoft Excel (with exposure to Minitab, R, or Python when relevant).\nCourse Website: https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#assessments-and-grading",
+    "href": "syllabus.html#assessments-and-grading",
+    "title": "Syllabus",
+    "section": "Assessments and Grading",
+    "text": "Assessments and Grading\nIn compliance with the Business School’s Official Grading Policy for MGMT 30500, the overall class GPA cannot exceed 3.0. Final letter grades will be based on a curved distribution of final course percentages. While Brightspace will display your final percentage performance, specific grade thresholds will not be released prior to official submission.\nBelow are the grading components and their respective weights:\n\n\n\nAssessment\nWeight\n\n\n\n\nAttendance/Participation\n7%\n\n\nHomework (8 total)\n28%\n\n\nQuizzes (3 total)\n15%\n\n\nMidterms (2 total)\n30%\n\n\nFinal (cumulative)\n20%\n\n\n\n\nAttendance and Participation\n\nAttendance will be recorded randomly via participatory activities.\n\nAccording to Purdue regulations, students are expected to be present at every scheduled session. Missing class negatively impacts your ability to succeed.\n\n\n\nHomework\n\nEight homework assignments; none are dropped.\n\nHomework must be submitted on Brightspace by the deadline in a single PDF or Word file, with all relevant Excel (or other) outputs included and clearly referenced.\n\nSubmissions:\n\nYou have 2 attempts to upload your assignment; only the second is graded if you use both attempts.\n\nNo late homework or email submissions are accepted.\n\n\nYou may discuss homework with classmates, but copying or duplicate submissions are considered cheating.\n\n\n\nQuizzes\n\nThree quizzes, each worth 5%. Quizzes 2 and 3 are not cumulative.\n\nMake-up quizzes are only allowed under exceptional circumstances (e.g., verifiable medical emergencies, conflicting NCAA events).\n\n\n\nMidterms\n\nTwo midterms, each worth 15%. Neither is cumulative.\n\nExams test technical calculation skills and conceptual understanding similar to homework problems.\n\nCalculators without internet or USB capabilities are allowed; phones/watches are not.\n\n\n\nFinal\n\nCumulative in-person exam.\n\nBring an approved calculator as described above.\n\n\n\nGrade Challenges\n\nChallenges to any quiz/exam or homework grade must be made by email within 7 calendar days of the grade announcement on Brightspace (3 days for the last homework).\nProvide your name, ID, assignment/exam number, and a specific explanation of the disputed deduction.\nAfter the window closes, the posted grades are final.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-policies-and-additional-details",
+    "href": "syllabus.html#course-policies-and-additional-details",
+    "title": "Syllabus",
+    "section": "Course Policies and Additional Details",
+    "text": "Course Policies and Additional Details\n\nExtra Credit Opportunities\n\nIf at least 85% of the class completes the anonymous midterm and/or final evaluations, each student earns a 1% bonus added to their Attendance/Participation performance.\n\n\n\nKeys to Success\n\nConsistent Effort – Follow the course schedule regularly.\n\nPre-Class Preparation – Read the assigned materials and review homework exercises.\n\nClass Materials – Print or digitally access slides/readings for note-taking.\n\nEngage with Problems – Practice is crucial; problems may be more challenging than they appear in lecture.\n\nActive Learning – Do not rely solely on class presentations. Work through exercises and reinforce your understanding.\n\n\n\nAI Policy\n\nYou may use AI tools to support your learning (e.g., clarifying concepts, generating examples), but:\n\nDo not use AI for homework solutions, quizzes, or exams.\n\nPractice refining prompts to get better AI outputs.\n\nVerify all AI-generated content for accuracy.\n\nCite any AI usage in your documents.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#schedule-1",
+    "href": "syllabus.html#schedule-1",
+    "title": "Syllabus",
+    "section": "Schedule",
+    "text": "Schedule",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MGMT 30500: Business Statistics",
+    "section": "",
+    "text": "IMPORTANT\nThis document does not replace the official information in the course brightspace page\n\n\n\nCourse Description and Objectives\nThis course is designed to introduce students to basic data analysis techniques. Coverage includes the application of probability distributions (normal, \\(t\\), binomial), sampling distributions, basic statistical inference methods, analysis of variance, applied linear regression techniques, logistic regression, time series analysis, statistical quality control, and decision analysis.\nOur main goal is to instill the basic quantitative and data analysis skills needed by managers in modern business, where Business Analytics and Data Science have become essential. These skills will aid in data-driven decision-making, risk assessments, and policy formulation, and will enable managers to collaborate effectively with data analysis teams to enhance business performance.\nSince modern data analysis is primarily performed using computers and various sophisticated software, this course will also emphasize software applications (such as Minitab, R, or Python). However, Microsoft Excel is the primary software tool demonstrated in this course.\nCourse Website: https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305/\n\n\nInstructor: Professor Davi Moreira\n\nEmail: dmoreira@purdue.edu\nVirtual Office hours: Zoom link in your Course Brightspace Page\nIndividual Appointments: Book time with me through the link in the course syllabus on your Course Brightspace Page or by appointment.\n\n\n\nLearning Outcomes\nBy the end of this course, students will be able to:\n\nUnderstand the basic statistical principles and their applications in the area of management and business.\n\nUnderstand fundamental issues in business and management.\n\nDescribe and use the commonly used statistical techniques for analyzing business data.\n\nUnderstand the impacts of recent developments in big data and AI in business and management.\n\nBe proficient in using Excel to carry out statistical and analytics methods covered in the course.\n\n\n\nPrerequisite\n\nSTAT 30301: Probability and Statistics for Business.\n\n\n\nCourse Materials\n\nTextbook:\nAnderson, Sweeney, Williams, Camn, Cochran, Fry, and Ohlmann.\nModern Business Statistics with Microsoft Excel, 7th Edition, 2020, Cengage Learning, Inc.\n(Required; also used in STAT 30301)\nHandouts:\nLecture Slides and Supplementary Materials (available on Brightspace).\nThe E-Book and handouts are located in Brightspace → Content → Table of Contents → …\nComputing:\nQuizzes will be administered in-person, and you will need to work on practice exercises in class. You should have access to a PC, Mac, or tablet.\nSoftware:\nMicrosoft Excel is used for in-class demonstrations. Ensure the “Data Analysis” ToolPak is enabled:\n\nFile -&gt; Options -&gt; Add-ins\n\nSelect Analysis ToolPak and Analysis ToolPak-VBA → Go\n\nData → Data Analysis (for Excel-based analyses)\n\n\n\n\nCourse Infra-structure\nBrightspace: The Course Brightspace Page https://purdue.brightspace.com/ should be checked on a regular basis for announcements and course material.\nSoftware: Microsoft Excel will be used for in-class demonstrations and instruction. The main tool is Data Analysis under Tools. If you don’t see this tool, follow the following steps to add in:\n\nFile -&gt; Options -&gt; Add-ins -&gt; Select Analysis ToolPak and Analysis ToolPak-VBA (also select StatTools 7.5, if available) -&gt; Go -&gt; Data -&gt; Data Analysis (to conduct analyses)\n\nCourse Website: This class website will be used throughout the course, but it does not replace the Course Brightspace Page.",
+    "crumbs": [
+      "Home"
+    ]
   }
 ]
