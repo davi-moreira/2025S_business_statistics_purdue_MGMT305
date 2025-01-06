@@ -155,7 +155,7 @@ Below are the grading components and their respective weights:
 ### AI Policy
 
 - You may use AI tools to support your learning (e.g., clarifying concepts, generating examples), but:  
-  1. **Do not** use AI for homework solutions, quizzes, or exams.  
+  1. **Do not** use AI for homework, quizzes, or exams.  
   2. Practice refining prompts to get better AI outputs.  
   3. Verify all AI-generated content for accuracy.  
   4. Cite any AI usage in your documents.
@@ -168,8 +168,6 @@ Refer to Brightspace for deadlines, academic integrity policies, accommodations,
 <center>
 _**Subject to Change Policy: While we will endeavor to maintain the course schedule, the syllabus may be adjusted to accommodate the learning pace and needs of the class._
 </center>
-
-## [Schedule](./schedule.qmd)
 
 ## [Schedule](./schedule.qmd)
 
