@@ -130,19 +130,25 @@ Below are the grading components and their respective weights:
 - **Cumulative** in-person exam.  
 - Bring an approved calculator as described above.
 
-### Grade Challenges
+## Grade Challenges
 
-- Challenges to any quiz/exam or homework grade must be made by email within **7 calendar days** of the grade announcement on Brightspace (3 days for the last homework).  
+Grades and solutions will be posted soon after each assignment deadline. Students have **7 calendar days** from the grade posting to submit any challenge (3 days for the final two quizzes and homework assignments). Challenges must be based on legitimate discrepancies regarding data mining principles or grading accuracy.
 
-- Provide your name, ID, assignment/exam number, and a specific explanation of the disputed deduction.  
+1. **Review posted solutions** thoroughly.  
+2. If you suspect an error, email Dr. Moreira with:  
+   - Course name, section, and lecture day/time  
+   - Your name and Student ID  
+   - Assignment/Exam Title or Number  
+   - Specific deduction questioned  
+   - Clear rationale referencing solutions or rubrics  
 
-- After the window closes, the posted grades are final.
+> *No grades will be discussed in-class. Please use office hours for clarifications. After the 7-day (or 3-day) window, grades are final.*
 
 ## Course Policies and Additional Details
 
 ### Extra Credit Opportunities
 
-- If at least 85% of the class completes the anonymous midterm and/or final evaluations, each student earns a 1% bonus added to their Attendance/Participation performance.
+- Check the Course Syllabus document on Brightspace for details.
 
 ### Keys to Success
 
@@ -152,6 +158,12 @@ Below are the grading components and their respective weights:
 4. **Engage with Problems** – Practice is crucial; problems may be more challenging than they appear in lecture.  
 5. **Active Learning** – Do not rely solely on class presentations. Work through exercises and reinforce your understanding.
 
+## Course Policies and Additional Details
+
+### Extra Credit Opportunities
+
+- Check the Course Syllabus document on Brightspace for details.
+
 ### AI Policy
 
 - You may use AI tools to support your learning (e.g., clarifying concepts, generating examples), but:  
@@ -160,14 +172,11 @@ Below are the grading components and their respective weights:
   3. Verify all AI-generated content for accuracy.  
   4. Cite any AI usage in your documents.
   
-  
-## Additional Information
+### Additional Information
 
 Refer to Brightspace for deadlines, academic integrity policies, accommodations, CAPS information, and non-discrimination statements.
 
-<center>
-_**Subject to Change Policy: While we will endeavor to maintain the course schedule, the syllabus may be adjusted to accommodate the learning pace and needs of the class._
-</center>
+### Subject to Change Policy 
 
-## [Schedule](./schedule.qmd)
+While we will endeavor to maintain the course schedule, the syllabus may be adjusted to accommodate the learning pace and needs of the class.
 
