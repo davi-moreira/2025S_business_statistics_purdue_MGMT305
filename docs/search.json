@@ -1634,7 +1634,7 @@
     "href": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-decision-rules",
     "title": " MGMT 30500: Business Statistics ",
     "section": "One-way ANOVA: Decision Rules",
-    "text": "One-way ANOVA: Decision Rules\n\n\n\np-value approach: Reject \\(H_0\\) if \\(p\\)-value \\(\\leq \\alpha\\)\n\n\n\nCritical-value approach: Reject \\(H_0\\) if \\(F \\geq F_{\\alpha}\\)\n\nwhere the critical value \\(F_{\\alpha}\\) is based on an F distribution with \\(k-1\\) numerator d.f. and \\(n_T - k\\) denominator d.f.\n\nIn our example, \\(F_{0.05,1,12} = \\text{F.inv}(0.95,2,12) = 3.89\\), and \\(9.18 &gt; 3.89\\).\n\nConclusion: We have statistically significant evidence that at least one pair of the assembly methods produced different mean numbers of filtration systems per week. The significance level is 5%."
+    "text": "One-way ANOVA: Decision Rules\n\n\n\np-value approach: Reject \\(H_0\\) if \\(p\\)-value \\(\\leq \\alpha\\)\n\n\n\nCritical-value approach: Reject \\(H_0\\) if \\(F \\geq F_{\\alpha}\\)\n\nwhere the critical value \\(F_{\\alpha}\\) is based on an F distribution with \\(k-1\\) numerator d.f. and \\(n_T - k\\) denominator d.f.\n\nIn our example, \\(F_{0.05,2,12} = \\text{F.inv}(0.95,2,12) = 3.89\\), and \\(9.18 &gt; 3.89\\).\n\nConclusion: We have statistically significant evidence that at least one pair of the assembly methods produced different mean numbers of filtration systems per week. The significance level is 5%."
   },
   {
     "objectID": "lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html#one-way-anova-anova-table",
