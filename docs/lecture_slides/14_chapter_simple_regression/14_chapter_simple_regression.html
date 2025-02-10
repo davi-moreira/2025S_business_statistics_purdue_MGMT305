@@ -1008,14 +1008,14 @@ b_0 = \bar{y} - b_1 \bar{x}
 <div style="font-size: 80%;">
 <table class="caption-top">
 <colgroup>
-<col style="width: 2%">
-<col style="width: 6%">
-<col style="width: 6%">
-<col style="width: 13%">
-<col style="width: 13%">
-<col style="width: 24%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1241,12 +1241,12 @@ y - \bar{y} = (\hat{y} - \bar{y}) + (y - \hat{y})
 <table class="caption-top" style="width:100%;">
 <colgroup>
 <col style="width: 7%">
-<col style="width: 10%">
-<col style="width: 17%">
-<col style="width: 19%">
-<col style="width: 10%">
+<col style="width: 11%">
 <col style="width: 16%">
-<col style="width: 19%">
+<col style="width: 21%">
+<col style="width: 9%">
+<col style="width: 15%">
+<col style="width: 18%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1438,7 +1438,7 @@ R^2 = 1 - \frac{\text{SSE}}{\text{SST}} = 1 - \frac{1530}{15730} = 1 - 0.973 = 9
 <div>
 <p><br></p>
 <ul>
-<li><p><strong>Adding <span class="math inline">\(R^2\)</span> Value to Scatter Diagram</strong></p>
+<li><p><strong>Adding</strong> <span class="math inline">\(R^2\)</span> Value to Scatter Diagram</p>
 <ul>
 <li>Step 1: Right-click on the trendline and select the <strong>Format Trendline</strong> option</li>
 <li>Step 2: When the Format Trendline dialog box appears:
@@ -1517,7 +1517,7 @@ r_{xy} = +0.9501
 <div class="fragment">
 <p><span class="math display">\[
    E(y) = \beta_0 + \beta_1x
-   \]</span></p>
+\]</span></p>
 </div>
 <ol start="2" type="1">
 <li class="fragment"><p>The variance of <span class="math inline">\(\epsilon\)</span>, denoted by <span class="math inline">\(\sigma^2\)</span>, is the same for all values of <span class="math inline">\(x\)</span>.</p>
@@ -1581,14 +1581,14 @@ s^2 = \text{MSE} = \frac{\text{SSE}}{(n-2)}, \quad \text{SSE = Sum of Squared Er
 <h2>Testing for Significance</h2>
 <div>
 <ul>
-<li><strong>An Estimate of <span class="math inline">\(\sigma\)</span></strong>
+<li><strong>An Estimate of</strong> <span class="math inline">\(\sigma\)</span>
 <ul>
 <li>To estimate <span class="math inline">\(\sigma\)</span>, we take the square root of <span class="math inline">\(s^2\)</span>.</li>
 <li>The resulting <span class="math inline">\(s\)</span> is called the standard error (of the estimate).</li>
 </ul></li>
 </ul>
 <p><span class="math display">\[
-s = \sqrt{MSE} = \sqrt{\frac{SSE}{n - 2}}
+s = \sqrt{MSE} = \sqrt{\frac{SSE}{n - 2}} = \sqrt{\frac{\sum (y_i - \hat{y}_i)^2}{n - 2}}
 \]</span></p>
 </div>
 </section>
@@ -1671,7 +1671,7 @@ F = \frac{SSR / 1}{SSE / (n-2)} = \frac{14,200 / 1}{1,530 / (10-2)} = 74.25
 <li><strong>Test Statistic</strong></li>
 </ul>
 <p><span class="math display">\[
-t = \frac{b_1 - 0}{s_{b_1}}, \quad \text{where} \quad s_{b_1} = \frac{s}{\sqrt{\sum(x_i - \bar{x})^2}}, \quad \text{follows } t(n-2), \text{ if } H_0 \text{ is true.}
+t = \frac{b_1 - 0}{s_{b_1}}, \quad \text{where} \quad s_{b_1} = \frac{s}{\sqrt{\sum(x_i - \bar{x})^2}} = \frac{\sqrt{\frac{\sum (y_i - \hat{y}_i)^2}{n - 2}}}{\sqrt{\sum(x_i - \bar{x})^2}}, \quad \text{follows } t(n-2), \text{ if } H_0 \text{ is true.}
 \]</span></p>
 </div>
 </section>
@@ -1740,7 +1740,7 @@ b_1 \pm t_{\alpha/2, n-2} s_{b_1}
 <p><br></p>
 <div>
 <ul>
-<li><strong>99% Confidence Interval for <span class="math inline">\(\beta_1\)</span>:</strong></li>
+<li><strong>99% Confidence Interval for</strong> <span class="math inline">\(\beta_1\)</span>:</li>
 </ul>
 <p><span class="math display">\[
 b_1 \pm t_{\alpha/2} s_{b_1} = 5 \pm 3.355(.5803) = 5 \pm 1.95
@@ -1938,14 +1938,14 @@ b_1 \pm t_{\alpha/2} s_{b_1} = 5 \pm 3.355(.5803) = 5 \pm 1.95
 <h2>Sums of Squares</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 3%">
-<col style="width: 6%">
-<col style="width: 6%">
-<col style="width: 13%">
 <col style="width: 12%">
-<col style="width: 27%">
-<col style="width: 16%">
-<col style="width: 15%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 14%">
+<col style="width: 12%">
+<col style="width: 12%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -2263,10 +2263,10 @@ Panel C
 <p><strong>Example:</strong> Armand’s Pizza Parlors</p>
 <table class="caption-top">
 <colgroup>
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 30%">
 <col style="width: 25%">
-<col style="width: 13%">
-<col style="width: 34%">
-<col style="width: 27%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -2431,10 +2431,10 @@ h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}
 <p><strong>Example:</strong> Armand’s Pizza Parlors</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 12%">
-<col style="width: 34%">
-<col style="width: 29%">
-<col style="width: 23%">
+<col style="width: 21%">
+<col style="width: 30%">
+<col style="width: 26%">
+<col style="width: 21%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -2535,7 +2535,7 @@ h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}
 </section>
 <section id="normal-probability-plot-1" class="slide level2 center">
 <h2>Normal Probability Plot</h2>
-<p><strong>Normal Scores for <span class="math inline">\(n = 10\)</span></strong></p>
+<p><strong>Normal Scores for</strong> <span class="math inline">\(n = 10\)</span></p>
 <center>
 <table class="caption-top">
 <thead>
