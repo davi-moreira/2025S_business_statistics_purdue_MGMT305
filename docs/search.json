@@ -5297,5 +5297,12 @@
     "crumbs": [
       "Home"
     ]
+  },
+  {
+    "objectID": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#derivation-of-the-total-sum-of-squares-sst",
+    "href": "lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html#derivation-of-the-total-sum-of-squares-sst",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Derivation of the Total Sum of Squares (SST)",
+    "text": "Derivation of the Total Sum of Squares (SST)\n\nIn the context of simple linear regression, the Total Sum of Squares (SST) is defined as the sum of the squared deviations of the observed \\(y\\) values from their sample mean \\(\\bar{y}\\):\n\\[\nSST = \\sum_{i=1}^{n} (y_i - \\bar{y})^2.\n\\]\nIt is also possible to compute the SST with the following:\n\\[\nSST = (n-1)s^2_y,\n\\]\nDerivation\nRecall that the sample variance of \\(y\\), denoted \\(s^2_y\\), is defined as:\n\\[\ns^2_y = \\frac{1}{n-1}\\sum_{i=1}^{n} (y_i - \\bar{y})^2.\n\\]\nThis definition uses \\(n-1\\) in the denominator to provide an unbiased estimator of the population variance.\nBy multiplying both sides of the sample variance definition by \\(n-1\\), we obtain:\n\\[\n(n-1)s^2_y = \\sum_{i=1}^{n} (y_i - \\bar{y})^2.\n\\]\nRecognizing that the right-hand side is exactly the definition of \\(SST\\), we conclude:\n\\[\nSST = (n-1)s^2_y.\n\\]\nThus, the derivation relies on the definition of sample variance, and the result follows directly from the algebraic manipulation."
   }
 ]

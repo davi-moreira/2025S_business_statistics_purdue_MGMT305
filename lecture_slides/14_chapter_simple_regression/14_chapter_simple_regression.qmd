@@ -714,6 +714,49 @@ $$
 |     | Mean Y | 130        | Sum of square | 15730 | 14200     | 1530        |
 |     |        |            |               | SST   | SSR       | SSE         |
 
+## Derivation of the Total Sum of Squares (SST)
+
+::: {style="font-size: 60%;"}
+
+In the context of simple linear regression, the Total Sum of Squares (SST) is defined as the sum of the squared deviations of the observed $y$ values from their sample mean $\bar{y}$:
+
+$$
+SST = \sum_{i=1}^{n} (y_i - \bar{y})^2.
+$$
+
+It is also possible to compute the SST with the following:
+
+$$
+SST = (n-1)s^2_y,
+$$
+
+**Derivation**
+
+Recall that the sample variance of $y$, denoted $s^2_y$, is defined as:
+
+$$
+s^2_y = \frac{1}{n-1}\sum_{i=1}^{n} (y_i - \bar{y})^2.
+$$
+
+This definition uses $n-1$ in the denominator to provide an unbiased estimator of the population variance.
+
+By multiplying both sides of the sample variance definition by $n-1$, we obtain:
+
+$$
+(n-1)s^2_y = \sum_{i=1}^{n} (y_i - \bar{y})^2.
+$$
+
+Recognizing that the right-hand side is exactly the definition of $SST$, we conclude:
+
+$$
+SST = (n-1)s^2_y.
+$$
+
+
+Thus, the derivation relies on the definition of sample variance, and the result follows directly from the algebraic manipulation.
+
+::: 
+
 # Coefficient of Determination {background-color="#cfb991"}
 
 ## Coefficient of Determination

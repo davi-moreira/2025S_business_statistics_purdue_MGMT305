@@ -1370,6 +1370,34 @@ y - \bar{y} = (\hat{y} - \bar{y}) + (y - \hat{y})
 </tr>
 </tbody>
 </table>
+</section>
+<section id="derivation-of-the-total-sum-of-squares-sst" class="slide level2 center">
+<h2>Derivation of the Total Sum of Squares (SST)</h2>
+<div style="font-size: 60%;">
+<p>In the context of simple linear regression, the Total Sum of Squares (SST) is defined as the sum of the squared deviations of the observed <span class="math inline">\(y\)</span> values from their sample mean <span class="math inline">\(\bar{y}\)</span>:</p>
+<p><span class="math display">\[
+SST = \sum_{i=1}^{n} (y_i - \bar{y})^2.
+\]</span></p>
+<p>It is also possible to compute the SST with the following:</p>
+<p><span class="math display">\[
+SST = (n-1)s^2_y,
+\]</span></p>
+<p><strong>Derivation</strong></p>
+<p>Recall that the sample variance of <span class="math inline">\(y\)</span>, denoted <span class="math inline">\(s^2_y\)</span>, is defined as:</p>
+<p><span class="math display">\[
+s^2_y = \frac{1}{n-1}\sum_{i=1}^{n} (y_i - \bar{y})^2.
+\]</span></p>
+<p>This definition uses <span class="math inline">\(n-1\)</span> in the denominator to provide an unbiased estimator of the population variance.</p>
+<p>By multiplying both sides of the sample variance definition by <span class="math inline">\(n-1\)</span>, we obtain:</p>
+<p><span class="math display">\[
+(n-1)s^2_y = \sum_{i=1}^{n} (y_i - \bar{y})^2.
+\]</span></p>
+<p>Recognizing that the right-hand side is exactly the definition of <span class="math inline">\(SST\)</span>, we conclude:</p>
+<p><span class="math display">\[
+SST = (n-1)s^2_y.
+\]</span></p>
+<p>Thus, the derivation relies on the definition of sample variance, and the result follows directly from the algebraic manipulation.</p>
+</div>
 </section></section>
 <section>
 <section id="coefficient-of-determination" class="title-slide slide level1 center" data-background-color="#cfb991">
