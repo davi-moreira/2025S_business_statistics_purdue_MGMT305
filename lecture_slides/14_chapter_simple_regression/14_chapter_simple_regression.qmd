@@ -1040,6 +1040,8 @@ The statistical evidence is sufficient to conclude that a significant relationsh
 
 ## Testing for Individual Significance: $t$ Test
 
+::: {style="font-size: 70%;"}
+
 :::: nonincremental
 ::: red
 In regression, $b_1$ follows a normal distribution with mean $\beta_1$.
@@ -1051,14 +1053,26 @@ In regression, $b_1$ follows a normal distribution with mean $\beta_1$.
 
     $H_a : \beta_1 \neq 0$
 
-<br>
-
 -   **Test Statistic**
 
 $$
-t = \frac{b_1 - 0}{s_{b_1}}, \quad \text{where} \quad s_{b_1} = \frac{s}{\sqrt{\sum(x_i - \bar{x})^2}} = \frac{\sqrt{\frac{\sum (y_i - \hat{y}_i)^2}{n - 2}}}{\sqrt{\sum(x_i - \bar{x})^2}}, \quad \text{follows } t(n-2), \text{ if } H_0 \text{ is true.}
+t = \frac{b_1 - 0}{s_{b_1}}, 
 $$
+where $s_{b_1}$ is the **standard error** of the slope estimate $b_1$, i.e., an estimate of the standard deviation of the sampling distribution of $b_1$. It is not the population standard deviation; it is the estimated uncertainty in the slope due to sampling. It follows $t(n-2)$, if $H_0$ is true.
+
+$$
+s_{b_1} = \frac{s}{\sqrt{\sum(x_i - \bar{x})^2}} = \frac{\sqrt{\frac{\sum (y_i - \hat{y}_i)^2}{n - 2}}}{\sqrt{\sum(x_i - \bar{x})^2}}= \sqrt{\frac{\sum (Y_i - \hat{Y}_i)^2}{(n - 2)\,\sum (X_i - \bar{X})^2}}
+$$
+
+if we denote $\text{MSE} = \frac{\sum (Y_i - \hat{Y}_i)^2}{n - 2}$ (the **mean squared error**), then:
+
+$$
+s_{b_1} = \sqrt{\frac{\text{MSE}}{\sum (X_i - \bar{X})^2}}.
+$$
+
 ::::
+
+:::
 
 ## Testing for Individual Significance: $t$ Test
 
@@ -1118,7 +1132,9 @@ where:
 
 -   $b_1$ is the point estimator,
 -   $t_{\alpha/2, n-2} s_{b_1}$ is the margin of error (MOE),
--   $t_{\alpha/2, n-2}$ is the *t* value providing an upper-tail area of $\alpha/2$ in a *t* distribution with $n-2$ degrees of freedom.
+-   $t_{\alpha/2, n-2}$ is the ***t* critical value** providing an upper-tail area of $\alpha/2$ in a *t* distribution with $n-2$ degrees of freedom.
+-   $s_{b_1}$ is the **standard error** of the slope estimate $b_1$, i.e., an estimate of the standard deviation of the sampling distribution of $b_1$. It is not the population standard deviation; it is the estimated uncertainty in the slope due to sampling.
+
 :::
 
 ## Confidence Interval for $\beta_1$

@@ -1685,6 +1685,7 @@ F = \frac{SSR / 1}{SSE / (n-2)} = \frac{14,200 / 1}{1,530 / (10-2)} = 74.25
 </section>
 <section id="testing-for-individual-significance-t-test" class="slide level2 center">
 <h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
+<div style="font-size: 70%;">
 <div>
 <div class="red">
 <p>In regression, <span class="math inline">\(b_1\)</span> follows a normal distribution with mean <span class="math inline">\(\beta_1\)</span>.</p>
@@ -1693,14 +1694,19 @@ F = \frac{SSR / 1}{SSE / (n-2)} = \frac{14,200 / 1}{1,530 / (10-2)} = 74.25
 <li><p><strong>Hypotheses</strong></p>
 <p><span class="math inline">\(H_0 : \beta_1 = 0 \quad (\text{Independent variable x is insignificant})\)</span></p>
 <p><span class="math inline">\(H_a : \beta_1 \neq 0\)</span></p></li>
-</ul>
-<p><br></p>
-<ul>
-<li><strong>Test Statistic</strong></li>
+<li><p><strong>Test Statistic</strong></p></li>
 </ul>
 <p><span class="math display">\[
-t = \frac{b_1 - 0}{s_{b_1}}, \quad \text{where} \quad s_{b_1} = \frac{s}{\sqrt{\sum(x_i - \bar{x})^2}} = \frac{\sqrt{\frac{\sum (y_i - \hat{y}_i)^2}{n - 2}}}{\sqrt{\sum(x_i - \bar{x})^2}}, \quad \text{follows } t(n-2), \text{ if } H_0 \text{ is true.}
+t = \frac{b_1 - 0}{s_{b_1}},
+\]</span> where <span class="math inline">\(s_{b_1}\)</span> is the <strong>standard error</strong> of the slope estimate <span class="math inline">\(b_1\)</span>, i.e., an estimate of the standard deviation of the sampling distribution of <span class="math inline">\(b_1\)</span>. It is not the population standard deviation; it is the estimated uncertainty in the slope due to sampling. It follows <span class="math inline">\(t(n-2)\)</span>, if <span class="math inline">\(H_0\)</span> is true.</p>
+<p><span class="math display">\[
+s_{b_1} = \frac{s}{\sqrt{\sum(x_i - \bar{x})^2}} = \frac{\sqrt{\frac{\sum (y_i - \hat{y}_i)^2}{n - 2}}}{\sqrt{\sum(x_i - \bar{x})^2}}= \sqrt{\frac{\sum (Y_i - \hat{Y}_i)^2}{(n - 2)\,\sum (X_i - \bar{X})^2}}
 \]</span></p>
+<p>if we denote <span class="math inline">\(\text{MSE} = \frac{\sum (Y_i - \hat{Y}_i)^2}{n - 2}\)</span> (the <strong>mean squared error</strong>), then:</p>
+<p><span class="math display">\[
+s_{b_1} = \sqrt{\frac{\text{MSE}}{\sum (X_i - \bar{X})^2}}.
+\]</span></p>
+</div>
 </div>
 </section>
 <section id="testing-for-individual-significance-t-test-1" class="slide level2 center">
@@ -1759,7 +1765,8 @@ b_1 \pm t_{\alpha/2, n-2} s_{b_1}
 <ul>
 <li><span class="math inline">\(b_1\)</span> is the point estimator,</li>
 <li><span class="math inline">\(t_{\alpha/2, n-2} s_{b_1}\)</span> is the margin of error (MOE),</li>
-<li><span class="math inline">\(t_{\alpha/2, n-2}\)</span> is the <em>t</em> value providing an upper-tail area of <span class="math inline">\(\alpha/2\)</span> in a <em>t</em> distribution with <span class="math inline">\(n-2\)</span> degrees of freedom.</li>
+<li><span class="math inline">\(t_{\alpha/2, n-2}\)</span> is the <strong><em>t</em> critical value</strong> providing an upper-tail area of <span class="math inline">\(\alpha/2\)</span> in a <em>t</em> distribution with <span class="math inline">\(n-2\)</span> degrees of freedom.</li>
+<li><span class="math inline">\(s_{b_1}\)</span> is the <strong>standard error</strong> of the slope estimate <span class="math inline">\(b_1\)</span>, i.e., an estimate of the standard deviation of the sampling distribution of <span class="math inline">\(b_1\)</span>. It is not the population standard deviation; it is the estimated uncertainty in the slope due to sampling.</li>
 </ul>
 </div>
 </section>
