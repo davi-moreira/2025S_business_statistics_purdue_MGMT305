@@ -3412,7 +3412,7 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#four-scenarios-for-predictors",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Four Scenarios for Predictors",
-    "text": "Four Scenarios for Predictors\n\n\n\n\n\n\n\n\n\n\nStatistically Significant(e.g. p-value &lt; 0.05)\nNot Statistically Significant(e.g. p-value ≥ 0.05)\n\n\n\n\nEffective (Adjusted R-squared increases significantly)\nScenario 1Predictor is both statistically significant and effective.\nScenario 3Effective but not statistically significant.\n\n\nNot Effective (Adjusted R-squared does not increase significantly)\nScenario 2Statistically significant but not effective.\nScenario 4Not statistically significant nor effective."
+    "text": "Four Scenarios for Predictors\n\n\n\n\n\n\n\n\n\n\nStatistically Significant(e.g. p-value &lt; 0.05)\nNot Statistically Significant(e.g. p-value ≥ 0.05)\n\n\n\n\nEffective (Adjusted R-squared increases significantly)\nScenario 1Predictor is both statistically significant and effective.\nScenario 3Effective but not statistically significant.\n\n\nNot Effective (Adjusted R-squared does not increase significantly)\nScenario 2Statistically significant but not effective.\nScenario 4Not statistically significant nor effective.\n\n\n\n\nDefinition: A predictor is an ineffective predictor if its \\(|T-Value| = \\left| \\frac{b - 0}{se(b)} \\right| &lt; 1\\). If that is the case, the coefficient estimate \\(b\\) is within one standard deviation from 0, i.e., too close to 0, or its two-sided \\(p-value &gt; 0.32\\) (Empirical rule).\n\nAdding an effective predictor will decrease the estimated error variance \\(S^2\\) and hence increase Adj \\(R^2\\). The opposite is true when adding an ineffective predictor.\nRemoving an effective predictor will increase the estimated error variance \\(S^2\\) and hence decrease Adj \\(R^2\\). The opposite is true when removing an ineffective predictor."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#scenario-1-statistically-significant-and-effective",
@@ -3538,7 +3538,7 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Stepwise Regression Example",
-    "text": "Stepwise Regression Example\nLet’s consider a dataset with the following variables:\n\nIncome: Household income (in $1000s)\nAge: Age of the head of the household\nEducation: Years of education\nSpending: Annual spending on goods (dependent variable)\n\n\nInitial Model\nWe start by considering an initial model with Income as the only predictor of Spending.\n\\[\nSpending = \\beta_0 + \\beta_1 \\cdot Income + \\epsilon\n\\]\nUsing an F-statistic and p-value, we find Income is significant, so we keep it in the model."
+    "text": "Stepwise Regression Example\nSuppose we have a dataset with:\n\nIncome (in thousands of dollars)\nAge (age of household head)\nEducation (years of education)\nSpending (annual spending on goods, our dependent variable)"
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-1",
@@ -3587,7 +3587,7 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#forward-selection-limitations",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Forward Selection Limitations",
-    "text": "Forward Selection Limitations\n\nNo Removal of Variables: Once a variable is entered into the model, it cannot be removed, even if later additions make it less significant. This could result in keeping variables that are not optimal for the final model.\nIgnores Multicollinearity: Forward selection does not account for multicollinearity between independent variables. High correlations among predictors may lead to unstable coefficients and misleading results.\nGreedy Approach: The procedure focuses on adding one variable at a time based on immediate statistical improvement, which might lead to suboptimal global models. It might overlook combinations of variables that would better explain the dependent variable.\nModel Overfitting: Forward selection increases the risk of overfitting, especially when the dataset has many variables. This results in a model that fits the training data too closely but performs poorly on new data.\nAssumes Independence of Variables: The procedure assumes that variables can be assessed one by one for entry, without considering how combinations of variables interact. This might ignore important interactions between variables that could improve model performance."
+    "text": "Forward Selection Limitations\n\n\nNo Removal of Variables: Because there is no mechanism to remove predictors, variables that become unnecessary later might remain in the final model. This can lead to inflated model complexity and reduced interpretability.\nPotential Multicollinearity Issues: Forward selection does not explicitly account for multicollinearity. High correlations among predictors may lead to unstable coefficient estimates and p-values, producing misleading or less robust results.\nGreedy Algorithm: The procedure is myopically focused on adding one predictor at a time based on immediate improvements in model fit. It may miss a combination of predictors that could perform better when considered together.\nRisk of Overfitting: When many potential predictors exist, forward selection can overfit the sample data, reducing the model’s generalizability. The model might appear strong in-sample but perform poorly on new data.\nNeglect of Interactions and Nonlinearities: Because forward selection evaluates predictors in isolation, it does not automatically consider interaction terms or nonlinear transformations. Thus, it can overlook influential higher-order relationships."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#backward-elimination-1",
@@ -3601,7 +3601,7 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#backward-elimination-limitations",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Backward Elimination Limitations",
-    "text": "Backward Elimination Limitations\n\nNo Reentry of Variables: Once a variable is removed from the model, it cannot be reentered, even if later stages show that it might be significant. This could lead to models that miss important predictors.\nIgnores Multicollinearity: Backward elimination does not take into account multicollinearity between variables. High correlations between predictors can result in unreliable coefficient estimates.\nOverfitting Risk: By starting with all variables and only eliminating those that don’t meet the p-value threshold, there is a higher risk of overfitting. The model may fit the training data too closely but generalize poorly to new data.\nDependent on Initial Model: The procedure is highly dependent on the initial model, which includes all variables. Poor choices in the initial set of variables can lead to suboptimal models.\nMay Lead to Different Models: Different elimination paths could lead to different final models, and not all of them may be optimal. Backward elimination might overlook variable interactions and combinations that forward selection would have considered."
+    "text": "Backward Elimination Limitations\n\nNo Reentry of Variables: Once a predictor is removed, it stays out—even if, after further eliminations, it would have become significant again. This may lead to omitting variables that could have value under a different model specification.\nMulticollinearity Concerns: Backward elimination does not explicitly address multicollinearity. Highly correlated predictors may cause instability in coefficient estimates, rendering p-values less reliable.\nRisk of Overfitting: Because the procedure begins with all variables, it may produce an overly complex initial model. While backward elimination might remove some predictors, it can still result in a model that is closely tailored to the sample data but performs poorly in out-of-sample scenarios.\nDependence on Initial Model: The entire process depends heavily on the initial choice of predictors. If irrelevant variables are included or if critical interaction terms are missing, the final model may be suboptimal.\nPotentially Different Final Models: Different paths of elimination might yield different final models, depending on the order in which variables are removed. This is particularly true if multiple predictors have similar statistical significance or if interactions are not explored."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#best-subsets-regression-1",
@@ -5304,5 +5304,89 @@
     "title": " MGMT 30500: Business Statistics ",
     "section": "Derivation of the Total Sum of Squares (SST)",
     "text": "Derivation of the Total Sum of Squares (SST)\n\nIn the context of simple linear regression, the Total Sum of Squares (SST) is defined as the sum of the squared deviations of the observed \\(y\\) values from their sample mean \\(\\bar{y}\\):\n\\[\nSST = \\sum_{i=1}^{n} (y_i - \\bar{y})^2.\n\\]\nIt is also possible to compute the SST with the following:\n\\[\nSST = (n-1)s^2_y,\n\\]\nDerivation\nRecall that the sample variance of \\(y\\), denoted \\(s^2_y\\), is defined as:\n\\[\ns^2_y = \\frac{1}{n-1}\\sum_{i=1}^{n} (y_i - \\bar{y})^2.\n\\]\nThis definition uses \\(n-1\\) in the denominator to provide an unbiased estimator of the population variance.\nBy multiplying both sides of the sample variance definition by \\(n-1\\), we obtain:\n\\[\n(n-1)s^2_y = \\sum_{i=1}^{n} (y_i - \\bar{y})^2.\n\\]\nRecognizing that the right-hand side is exactly the definition of \\(SST\\), we conclude:\n\\[\nSST = (n-1)s^2_y.\n\\]\nThus, the derivation relies on the definition of sample variance, and the result follows directly from the algebraic manipulation."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-overview",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-overview",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Stepwise Regression: Overview",
+    "text": "Stepwise Regression: Overview\n\nStepwise regression is a semi-automated procedure for selecting independent variables in a multiple regression model.\nAt each step, the method evaluates whether any variable should be removed from or added to the model based on predefined significance levels.\nBecause it does not exhaustively examine all possible combinations of predictors, stepwise regression does not guarantee finding the best subset of predictors in terms of overall fit or predictive accuracy."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-how-it-works",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-how-it-works",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Stepwise Regression: How It Works",
+    "text": "Stepwise Regression: How It Works\n\nInitial Removal Check\n\nBegin with an initial model (which can start with no variables, a single variable, or a chosen subset).\nCompute F-statistics and p-values for each predictor already included.\nIf any predictor’s p-value exceeds the “p-value to leave” threshold (often denoted \\(\\alpha_{\\text{remove}}\\)), the predictor with the largest p-value is removed.\nAfter a variable is removed, a new step commences.\n\nNext Possible Addition\n\nIf no variable meets the criterion for removal, then the procedure checks any variables not in the model.\nCompute F-statistics and p-values for each candidate predictor not in the model.\nIf the smallest p-value among these is below the “p-value to enter” threshold (often denoted \\(\\alpha_{\\text{enter}}\\)), the corresponding predictor is added.\nSteps alternate between removal and addition until no variable can be removed or added based on these criteria."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#considerations-and-limitations",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#considerations-and-limitations",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Considerations and Limitations",
+    "text": "Considerations and Limitations\n\nNon-exhaustive approach: Because stepwise regression evaluates one variable at a time (in or out), it does not consider all possible subsets of predictors. Therefore, it might overlook a model that would yield a higher \\(R^2\\) or better predictive performance.\nVariability of inclusion: A predictor can enter at one step, be removed at a later step, and potentially re-enter if the residual relationships change after adding or removing other variables.\nOveremphasis on p-values: Stepwise regression heavily depends on p-values, which can be sensitive to sample size and collinearity. It can also lead to an overly complex model or, conversely, a model that excludes potentially relevant predictors.\nData-driven model building: Automated selection methods (including stepwise) may produce results that do not generalize well outside the sample. Cross-validation or penalized methods (e.g., LASSO, ridge regression) are often recommended as more robust alternatives."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-starting-point",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-starting-point",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Stepwise Regression Example: Starting Point",
+    "text": "Stepwise Regression Example: Starting Point\n\nInitial Model\n\nBegin with one predictor (for instance, Income) or a subset deemed important by domain knowledge.\nFit the model:\n\\[\n\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\epsilon.\n\\]\nSuppose Income is significant at \\(\\alpha=0.05\\). Keep Income in the model.\n\nEvaluating Other Predictors\n\nNext, consider adding Age or Education.\nFit two separate models, each adding one candidate variable:\n\n\\(\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\epsilon.\\)\n\\(\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_3 \\cdot \\text{Age} + \\epsilon.\\)\n\nCalculate p-values for \\(\\hat{\\beta}_2\\) and \\(\\hat{\\beta}_3\\). If Education has the lower p-value (below the “p-value to enter,” say 0.05), add Education to the model."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-checking-for-removal",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-checking-for-removal",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Stepwise Regression Example: Checking for Removal",
+    "text": "Stepwise Regression Example: Checking for Removal\nOnce you have a model with Income and Education, stepwise regression checks if Income or Education should be removed:\n\nRe-estimate:\n\\[\n\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\epsilon.\n\\]\nIf either predictor’s p-value exceeds “p-value to leave” (say 0.10), remove that predictor. Otherwise, both stay."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-considering-remaining-predictors",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-considering-remaining-predictors",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Stepwise Regression Example: Considering Remaining Predictors",
+    "text": "Stepwise Regression Example: Considering Remaining Predictors\nIf Age is still not in the model, you check whether it can enter:\n\nFit:\n\\[\n\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\beta_3 \\cdot \\text{Age} + \\epsilon.\n\\]\nIf Age’s p-value is below the threshold, it is added; otherwise, it is excluded.\n\nContinue this process until no more additions or removals are justified."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-final-model",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-final-model",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Stepwise Regression Example: Final Model",
+    "text": "Stepwise Regression Example: Final Model\nEventually, the procedure converges on a model, for example:\n\\[\n\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\epsilon.\n\\]\nThis indicates Income and Education meet the significance criteria for inclusion, while Age does not."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#summary-of-the-stepwise-procedure",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#summary-of-the-stepwise-procedure",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Summary of the Stepwise Procedure",
+    "text": "Summary of the Stepwise Procedure\n\nStart\n\nChoose an initial model (empty, single variable, or chosen subset).\n\nRemove\n\nCheck if any included variables can be removed based on “p-value to leave.” If so, remove the worst offender and repeat.\n\nAdd\n\nIf no variable is removed in a step, check whether any excluded variable meets the “p-value to enter.” If so, add the variable with the smallest p-value.\n\nStop\n\nTerminate when no variable can be removed or added according to the thresholds."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#forward-selection-overview",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#forward-selection-overview",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forward Selection: Overview",
+    "text": "Forward Selection: Overview\n\nForward selection is a sequential variable selection procedure that begins with an empty model (i.e., no predictors) and incrementally adds variables based on significance criteria.\nUnlike the stepwise procedure, forward selection never removes any variable once it has been included."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#forward-selection-procedure",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#forward-selection-procedure",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Forward Selection: Procedure",
+    "text": "Forward Selection: Procedure\n\n\nStart with No Variables\n\nThe initial model includes no predictors: \\[\ny = \\beta_0 + \\epsilon.\n\\]\n\nEvaluate All Predictors for Entry\n\nFor each potential predictor not yet in the model, calculate the F-statistic (or equivalently, t-statistic for the coefficient) and its corresponding p-value.\np-Value to Enter: Each predictor is tested against a specified significance level (e.g., \\(\\alpha_{\\text{enter}}\\)). If the smallest p-value among all candidate predictors falls below \\(\\alpha_{\\text{enter}}\\), add that corresponding predictor to the model.\n\nRecalculate and Repeat\n\nAfter adding a predictor, recalculate the model parameters and evaluate the remaining predictors for entry. Continue this process of adding one variable at a time.\n\nTermination\n\nThe procedure stops when no remaining predictors meet the threshold for entry, meaning all p-values for excluded variables exceed \\(\\alpha_{\\text{enter}}\\).\n\n\n\n\nKey Difference from Stepwise: In forward selection, once a variable is included, it cannot be removed—even if adding subsequent variables renders it less significant."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#backward-elimination-overview",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#backward-elimination-overview",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Backward Elimination: Overview",
+    "text": "Backward Elimination: Overview\nBackward elimination is a sequential variable selection method that starts with the full model—i.e., one that includes all potential predictors—and iteratively removes the least significant predictor at each step. It stops when no remaining predictors have a p-value above the designated “p-value to leave” threshold (\\(\\alpha_{\\text{remove}}\\)). Unlike stepwise methods, once a variable is removed, it is not allowed to reenter the model."
+  },
+  {
+    "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#backward-elimination-procedure",
+    "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#backward-elimination-procedure",
+    "title": " MGMT 30500: Business Statistics ",
+    "section": "Backward Elimination: Procedure",
+    "text": "Backward Elimination: Procedure\n\n\nBegin with All Predictors\n\nThe initial model is: \\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\dots + \\beta_k x_k + \\epsilon.\n\\]\n\nCompute p-values\n\nEstimate the coefficients and compute p-values (or equivalent F-statistics) for each predictor.\n\nRemove the Least Significant Variable\n\nIdentify the predictor with the largest p-value.\nIf that p-value exceeds the “p-value to leave” threshold, remove the corresponding variable from the model.\n\nRe-estimate and Repeat\n\nAfter removing a variable, re-fit the model and compute p-values again for the reduced set of predictors.\n\nContinue removing variables one at a time until no remaining predictors have p-values larger than \\(\\alpha_{\\text{remove}}\\).\n\nStop Criterion\n\nOnce no variable meets the removal criterion, the procedure ends. The final set of variables constitutes the chosen model.\n\n\n\n\nKey Restriction: Any predictor removed at an earlier step cannot be reconsidered for reentry in later steps."
   }
 ]

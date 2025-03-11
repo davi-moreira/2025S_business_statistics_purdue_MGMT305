@@ -62,15 +62,12 @@ library(here)
 ::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
 -   General Linear Model
 -   Modeling Curvilinear Relationships
--   Interaction 
+-   Interaction
 -   Transformations
--   Nonlinear Models That Are Intrinsically Linear 
-
+-   Nonlinear Models That Are Intrinsically Linear
 :::
 
 ::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-
-
 -   Determining When to Add or Delete Variables\
 
 -   Variable Selection Procedures
@@ -79,7 +76,6 @@ library(here)
     -   Forward Method
     -   Backward Method
     -   Best Subsets Method
-
 :::
 :::::
 ::::::
@@ -463,28 +459,28 @@ Source: [Linear Regression Models with Logarithmic Transformations](https://kenb
 
 :::::: {style="font-size: 80%;"}
 | **Model** | **Model Equation** | **Interpretation of** $\beta_1$ | **Interpretation** |
-|----------------|----------------|----------------|-------------------------|
+|-----------------|-----------------|-----------------|-----------------------|
 | **Level-level** | $y = \beta_0 + \beta_1 x + \epsilon$ | $\Delta y = \beta_1 \Delta x$ | A one-unit change in $x$ results in a $\beta_1$ unit change in $y$ |
 
 ::::: fragment
 <br>
 
 |  |  |  |  |
-|----------------|----------------|----------------|-------------------------|
+|-----------------|-----------------|-----------------|-----------------------|
 | **Level-log** | $y = \beta_0 + \beta_1 \log(x) + \epsilon$ | $\Delta y = (\beta_1 / 100) \% \Delta x$ | A 1% change in $x$ results in a $\beta_1/100$ unit change in $y$ |
 
 :::: fragment
 <br>
 
 |  |  |  |  |
-|----------------|----------------|----------------|-------------------------|
+|-----------------|-----------------|-----------------|-----------------------|
 | **Log-level** | $\log(y) = \beta_0 + \beta_1 x + \epsilon$ | $\%\Delta y = (100\beta_1) \Delta x$ | A one-unit change in $x$ results in a $\beta_1\%$ change in $y$ |
 
 ::: fragment
 <br>
 
 |  |  |  |  |
-|----------------|----------------|----------------|-------------------------|
+|-----------------|-----------------|-----------------|-----------------------|
 | **Log-log** | $\log(y) = \beta_0 + \beta_1 \log(x) + \epsilon$ | $\%\Delta y = \beta_1 \% \Delta x$ | A 1% change in $x$ results in a $\beta_1\%$ change in $y$ |
 :::
 ::::
@@ -702,125 +698,120 @@ knitr::include_graphics("figs/transformation_power.png")
 
 <br>
 
-
 # When to Add or Delete Variables {background-color="#cfb991"}
 
 ## Overview of Predictor Evaluation
 
-- **Statistical Significance**: Indicates whether the relationship between a predictor and the dependent variable is unlikely to have occurred by chance.
+-   **Statistical Significance**: Indicates whether the relationship between a predictor and the dependent variable is unlikely to have occurred by chance.
 
-- **Effectiveness**: Reflects the practical impact or importance of the predictor on the dependent variable.
-  - Assessed by observing changes in **adjusted R-squared** when the predictor is included.
-  - Statistical significance is evaluated using the **p-value**.
+-   **Effectiveness**: Reflects the practical impact or importance of the predictor on the dependent variable.
+
+    -   Assessed by observing changes in **adjusted R-squared** when the predictor is included.
+    -   Statistical significance is evaluated using the **p-value**.
 
 ## Four Scenarios for Predictors
 
-<br>
+::: {style="font-size: 70%;"}
 
-|                        | **Statistically Significant**<br>(e.g. p-value < 0.05) | **Not Statistically Significant**<br>(e.g. p-value ≥ 0.05) |
-|:------------------------:|:------------------------------------------------:|:----------------------------------------------------:|
+|   | **Statistically Significant**<br>(e.g. p-value \< 0.05) | **Not Statistically Significant**<br>(e.g. p-value ≥ 0.05) |
+|:---------------:|:------------------------:|:---------------------------:|
 | **Effective** (Adjusted R-squared increases significantly) | Scenario 1<br>Predictor is both statistically significant and effective. | Scenario 3<br>Effective but not statistically significant. |
 | **Not Effective** (Adjusted R-squared does not increase significantly) | Scenario 2<br>Statistically significant but not effective. | Scenario 4<br>Not statistically significant nor effective. |
 
+- **Definition**: A predictor is an **ineffective predictor** if its  $|T-Value| = \left| \frac{b - 0}{se(b)} \right| < 1$. If that is the case, the coefficient estimate $b$ is within one standard deviation from 0, i.e., too close to 0, or its two-sided $p-value > 0.32$ (Empirical rule).  
+
+  - **Adding** an effective predictor will decrease the estimated error variance $S^2$ and hence increase Adj $R^2$. The opposite is true when adding an ineffective predictor.  
+
+  - **Removing** an effective predictor will increase the estimated error variance $S^2$ and hence decrease Adj $R^2$. The opposite is true when removing an ineffective predictor.  
+
+:::
 
 ## Scenario 1: Statistically Significant and Effective
 
 **Characteristics**
 
-- **p-value** below chosen significance level (e.g., $p < 0.05$)
+-   **p-value** below chosen significance level (e.g., $p < 0.05$)
 
-- **Adjusted R-squared** increases meaningfully when the predictor is included
+-   **Adjusted R-squared** increases meaningfully when the predictor is included
 
-:::{.fragment}
-
+::: fragment
 **Interpretation**
 
-- Predictor reliably contributes to the dependent variable's variance.
+-   Predictor reliably contributes to the dependent variable's variance.
 
-- Both statistically and practically meaningful.
-
+-   Both statistically and practically meaningful.
 :::
-:::{.fragment}
 
+::: fragment
 **Example**
 
-- **Healthcare**: Adding "age" as a predictor in a model for blood pressure yields a **p-value of $p < 0.001$** and increases the adjusted R-squared from 0.30 to **0.45**.
+-   **Healthcare**: Adding "age" as a predictor in a model for blood pressure yields a **p-value of** $p < 0.001$ and increases the adjusted R-squared from 0.30 to **0.45**.
 
-- Age is both a statistically significant and effective predictor of blood pressure.
-
+-   Age is both a statistically significant and effective predictor of blood pressure.
 :::
 
 ## Scenario 2: Statistically Significant but Not Effective
 
 **Characteristics**
 
-- **p-value** below the significance threshold
+-   **p-value** below the significance threshold
 
-- **Minimal change in adjusted R-squared**: negligible improvement in the model's explanatory power
+-   **Minimal change in adjusted R-squared**: negligible improvement in the model's explanatory power
 
-:::{.fragment}
-
+::: fragment
 **Interpretation**
 
-- Statistically reliable but lacks practical impact.
-- Common in large samples where even small effects become significant.
-
+-   Statistically reliable but lacks practical impact.
+-   Common in large samples where even small effects become significant.
 :::
-:::{.fragment}
 
+::: fragment
 **Example**
 
-- **Economics**: Adding "hair color" as a predictor of income yields **p = 0.02**, but increases adjusted R-squared from 0.25 to **0.251**.
-- Hair color is statistically significant but not practically effective.
-
+-   **Economics**: Adding "hair color" as a predictor of income yields **p = 0.02**, but increases adjusted R-squared from 0.25 to **0.251**.
+-   Hair color is statistically significant but not practically effective.
 :::
 
 ## Scenario 3: Not Statistically Significant but Effective
 
 **Characteristics**
 
-- **p-value** exceeds the significance level (e.g., $p > 0.05$)
-- **Substantial increase in adjusted R-squared**
+-   **p-value** exceeds the significance level (e.g., $p > 0.05$)
+-   **Substantial increase in adjusted R-squared**
 
-:::{.fragment}
-
+::: fragment
 **Interpretation**
 
-- Meaningful effect, but lacks statistical support.
-- May need a larger sample size or further refinement.
-
+-   Meaningful effect, but lacks statistical support.
+-   May need a larger sample size or further refinement.
 :::
-:::{.fragment}
 
+::: fragment
 **Example**
 
-- **Education**: Adding "hours of sleep" as a predictor of student performance increases adjusted R-squared from 0.40 to **0.50** but yields **p = 0.08**.
+-   **Education**: Adding "hours of sleep" as a predictor of student performance increases adjusted R-squared from 0.40 to **0.50** but yields **p = 0.08**.
 
-- "Hours of sleep" has a practical impact but isn’t statistically significant.
-
+-   "Hours of sleep" has a practical impact but isn’t statistically significant.
 :::
 
 ## Scenario 4: Not Statistically Significant and Not Effective
 
 **Characteristics**
 
-- **p-value** above the significance threshold
-- **No increase in adjusted R-squared**
+-   **p-value** above the significance threshold
+-   **No increase in adjusted R-squared**
 
-:::{.fragment}
-
+::: fragment
 **Interpretation**
 
-- Predictor lacks both statistical and practical value.
-- Likely safe to exclude from the model.
-
+-   Predictor lacks both statistical and practical value.
+-   Likely safe to exclude from the model.
 :::
-:::{.fragment}
 
+::: fragment
 **Example**
 
-- **Marketing**: Adding "shoe size" to predict customer satisfaction yields **p = 0.60** and decreases adjusted R-squared from 0.35 to **0.34**.
-
+-   **Marketing**: Adding "shoe size" to predict customer satisfaction yields **p = 0.60** and decreases adjusted R-squared from 0.35 to **0.34**.
 :::
 
 # Strategies for Adding or Removing Variables {background-color="#cfb991"}
@@ -829,7 +820,7 @@ knitr::include_graphics("figs/transformation_power.png")
 
 ::: {style="font-size: 70%;"}
 | **\#** | **Strategy** | **Description** | **Add Variables** | **Remove Variables** |
-|--------------|--------------|--------------|------------------|--------------|
+|---------------|---------------|---------------|---------------|---------------|
 | 1 | **P-Value** | Based on statistical significance | If p-value \< 0.05 | If p-value \> 0.05 |
 | 2 | **Adjusted R-Squared** | Checks if model fit improves | If adjusted $R^2$ increases | If adjusted $R^2$ decreases |
 | 3 | **F-Test** | Compares models with and without added variables | If F-test indicates significant improvement | If F-test shows no significant improvement |
@@ -844,8 +835,7 @@ knitr::include_graphics("figs/transformation_power.png")
 
 ## Adding or Removing Variables
 
-::: {.nonincremental}
-
+::: nonincremental
 We will focus on the following:
 
 1.  **Stepwise regression**
@@ -856,7 +846,6 @@ We will focus on the following:
 The first three procedures are iterative; at each step, a single independent variable is added or deleted, and the new model is evaluated. The process continues until a stopping criterion indicates that the procedure cannot find a better model.
 
 The best-subsets procedure is not a one-variable-at-a-time procedure; it evaluates regression models involving different subsets of the independent variables.
-
 :::
 
 ## Adding Variables in Regression Models: F-test
@@ -970,6 +959,116 @@ The p-value corresponding to this F-statistic is used to determine whether an in
 
 # Stepwise Regression {background-color="#cfb991"}
 
+## Stepwise Regression: Overview
+
+- Stepwise regression is a **semi-automated** procedure for selecting independent variables in a multiple regression model. 
+
+- At each step, the method evaluates whether any variable should be **removed** from or **added** to the model based on predefined significance levels. 
+
+- Because it does not exhaustively examine all possible combinations of predictors, stepwise regression does not guarantee finding the best subset of predictors in terms of overall fit or predictive accuracy. 
+
+## Stepwise Regression: How It Works
+
+1. **Initial Removal Check**  
+   - Begin with an initial model (which can start with no variables, a single variable, or a chosen subset).
+   - **Compute F-statistics and p-values** for each predictor already included.
+   - If **any** predictor’s p-value exceeds the “p-value to leave” threshold (often denoted $\alpha_{\text{remove}}$), the predictor with the **largest** p-value is removed.
+   - After a variable is removed, a new step commences.
+
+2. **Next Possible Addition**  
+   - If no variable meets the criterion for removal, then the procedure checks any variables **not** in the model.
+   - **Compute F-statistics and p-values** for each candidate predictor not in the model.
+   - If the **smallest** p-value among these is below the “p-value to enter” threshold (often denoted $\alpha_{\text{enter}}$), the corresponding predictor is added.
+   - Steps alternate between removal and addition until no variable can be removed or added based on these criteria.
+
+
+## Considerations and Limitations
+
+- **Non-exhaustive approach**: Because stepwise regression evaluates one variable at a time (in or out), it does **not** consider all possible subsets of predictors. Therefore, it might overlook a model that would yield a higher $R^2$ or better predictive performance.
+
+- **Variability of inclusion**: A predictor can enter at one step, be removed at a later step, and potentially re-enter if the residual relationships change after adding or removing other variables.
+
+- **Overemphasis on p-values**: Stepwise regression heavily depends on p-values, which can be sensitive to sample size and collinearity. It can also lead to an overly complex model or, conversely, a model that excludes potentially relevant predictors.
+
+- **Data-driven model building**: Automated selection methods (including stepwise) may produce results that do not generalize well outside the sample. Cross-validation or penalized methods (e.g., LASSO, ridge regression) are often recommended as more robust alternatives.
+
+## Stepwise Regression Example
+
+Suppose we have a dataset with:
+
+- **Income** (in thousands of dollars)
+- **Age** (age of household head)
+- **Education** (years of education)
+- **Spending** (annual spending on goods, our dependent variable)
+
+## Stepwise Regression Example: Starting Point
+
+1. **Initial Model**  
+   - Begin with one predictor (for instance, **Income**) or a subset deemed important by domain knowledge.
+   - Fit the model:  
+     $$
+     \text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \epsilon.
+     $$
+   - Suppose **Income** is significant at $\alpha=0.05$. Keep **Income** in the model.
+
+2. **Evaluating Other Predictors**  
+   - Next, consider adding **Age** or **Education**.
+   - Fit two separate models, each adding one candidate variable:
+     1. $\text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \beta_2 \cdot \text{Education} + \epsilon.$
+     2. $\text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \beta_3 \cdot \text{Age} + \epsilon.$
+   - Calculate p-values for $\hat{\beta}_2$ and $\hat{\beta}_3$. If **Education** has the lower p-value (below the “p-value to enter,” say 0.05), add **Education** to the model.
+
+
+## Stepwise Regression Example: Checking for Removal
+
+Once you have a model with **Income** and **Education**, stepwise regression checks if **Income** or **Education** should be removed:
+
+1. Re-estimate:  
+   $$
+   \text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \beta_2 \cdot \text{Education} + \epsilon.
+   $$
+2. If either predictor’s p-value exceeds “p-value to leave” (say 0.10), remove that predictor. Otherwise, both stay.
+
+
+## Stepwise Regression Example: Considering Remaining Predictors
+
+If **Age** is still not in the model, you check whether it can enter:
+
+1. Fit:  
+   $$
+   \text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \beta_2 \cdot \text{Education} + \beta_3 \cdot \text{Age} + \epsilon.
+   $$
+2. If **Age**’s p-value is below the threshold, it is added; otherwise, it is excluded.  
+3. Continue this process until no more additions or removals are justified.
+
+## Stepwise Regression Example: Final Model
+
+Eventually, the procedure converges on a model, for example:
+
+$$
+\text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \beta_2 \cdot \text{Education} + \epsilon.
+$$
+
+This indicates **Income** and **Education** meet the significance criteria for inclusion, while **Age** does not.
+
+## Summary of the Stepwise Procedure
+
+1. **Start**  
+   - Choose an initial model (empty, single variable, or chosen subset).
+
+2. **Remove**  
+   - Check if any included variables can be removed based on “p-value to leave.” If so, remove the worst offender and repeat.
+
+3. **Add**  
+   - If no variable is removed in a step, check whether any excluded variable meets the “p-value to enter.” If so, add the variable with the smallest p-value.
+
+4. **Stop**  
+   - Terminate when no variable can be removed or added according to the thresholds.
+
+
+<!---
+# Stepwise Regression {background-color="#cfb991"}
+
 ## Stepwise Regression
 
 The stepwise regression procedure begins each step by determining whether any of the variables **already in the model** should be removed.
@@ -1009,8 +1108,7 @@ Let's consider a dataset with the following variables:
 -   **Education**: Years of education
 -   **Spending**: Annual spending on goods (dependent variable)
 
-::: {.fragment}
-
+::: fragment
 **Initial Model**
 
 We start by considering an initial model with **Income** as the only predictor of **Spending**.
@@ -1020,66 +1118,58 @@ Spending = \beta_0 + \beta_1 \cdot Income + \epsilon
 $$
 
 Using an F-statistic and p-value, we find **Income** is significant, so we keep it in the model.
-
 :::
-
 
 ## Stepwise Regression Example
 
-::: {style="font-size: 60%;"}
+:::: {style="font-size: 60%;"}
 ::: nonincremental
-
-
 The remaining variables, **Age** and **Education**, are candidates for inclusion.
 
 **Calculating p-values for Inclusion**
 
-- **Add Each Variable Separately**: Create two new models:
+-   **Add Each Variable Separately**: Create two new models:
 
-  1. **Adding Education**:
+    1.  **Adding Education**:
 
-     $$
-     Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \epsilon
-     $$
+        $$
+        Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \epsilon
+        $$
 
-  2. **Adding Age**:
+    2.  **Adding Age**:
 
-     $$
-     Spending = \beta_0 + \beta_1 \cdot Income + \beta_3 \cdot Age + \epsilon
-     $$
+        $$
+        Spending = \beta_0 + \beta_1 \cdot Income + \beta_3 \cdot Age + \epsilon
+        $$
 
-- **Estimate Coefficients**: For each model, estimate the new coefficients ($\hat{\beta}_2$ or $\hat{\beta}_3$).
+-   **Estimate Coefficients**: For each model, estimate the new coefficients ($\hat{\beta}_2$ or $\hat{\beta}_3$).
 
-- **Compute Standard Errors**: Calculate the standard errors for these new coefficients.
+-   **Compute Standard Errors**: Calculate the standard errors for these new coefficients.
 
-- **Calculate t-statistics**:
+-   **Calculate t-statistics**:
 
-  $$
-  t_{\text{Education}} = \frac{\hat{\beta}_2}{SE(\hat{\beta}_2)}
-  $$
+    $$
+    t_{\text{Education}} = \frac{\hat{\beta}_2}{SE(\hat{\beta}_2)}
+    $$
 
-  $$
-  t_{\text{Age}} = \frac{\hat{\beta}_3}{SE(\hat{\beta}_3)}
-  $$
+    $$
+    t_{\text{Age}} = \frac{\hat{\beta}_3}{SE(\hat{\beta}_3)}
+    $$
 
-- **Determine p-values**: Find the p-values corresponding to $t_{\text{Education}}$ and $t_{\text{Age}}$.
+-   **Determine p-values**: Find the p-values corresponding to $t_{\text{Education}}$ and $t_{\text{Age}}$.
 
 **Decision**
 
-- **Select Variable with Lowest p-value**: Choose the variable with the lowest p-value below the entry threshold (e.g., 0.05).
+-   **Select Variable with Lowest p-value**: Choose the variable with the lowest p-value below the entry threshold (e.g., 0.05).
 
-- **Add Significant Variable**: Since **Education** is significant (assuming a p-value of 0.01), add it to the model.
-
+-   **Add Significant Variable**: Since **Education** is significant (assuming a p-value of 0.01), add it to the model.
 :::
-:::
-
+::::
 
 ## Stepwise Regression Example
 
-::: {style="font-size: 70%;"}
+:::: {style="font-size: 70%;"}
 ::: nonincremental
-
-
 With **Income** and **Education** in the model:
 
 $$
@@ -1088,69 +1178,63 @@ $$
 
 **Calculating p-values for Removal**
 
-- **Re-estimate Coefficients**: Re-estimate $\hat{\beta}_1$ and $\hat{\beta}_2$.
+-   **Re-estimate Coefficients**: Re-estimate $\hat{\beta}_1$ and $\hat{\beta}_2$.
 
-- **Compute Standard Errors**: Calculate the standard errors for these coefficients.
+-   **Compute Standard Errors**: Calculate the standard errors for these coefficients.
 
-- **Calculate t-statistics**:
+-   **Calculate t-statistics**:
 
-  $$
-  t_{\text{Income}} = \frac{\hat{\beta}_1}{SE(\hat{\beta}_1)}
-  $$
+    $$
+    t_{\text{Income}} = \frac{\hat{\beta}_1}{SE(\hat{\beta}_1)}
+    $$
 
-  $$
-  t_{\text{Education}} = \frac{\hat{\beta}_2}{SE(\hat{\beta}_2)}
-  $$
+    $$
+    t_{\text{Education}} = \frac{\hat{\beta}_2}{SE(\hat{\beta}_2)}
+    $$
 
-- **Determine p-values**: Find the p-values corresponding to $t_{\text{Income}}$ and $t_{\text{Education}}$.
+-   **Determine p-values**: Find the p-values corresponding to $t_{\text{Income}}$ and $t_{\text{Education}}$.
 
 **Decision**
 
-- **Check for Non-significance**: If any variable's p-value exceeds the removal threshold (e.g., 0.10), consider removing it.
+-   **Check for Non-significance**: If any variable's p-value exceeds the removal threshold (e.g., 0.10), consider removing it.
 
-- **Retain Significant Variables**: If both variables remain significant (p-values below 0.05), keep them in the model.
-
+-   **Retain Significant Variables**: If both variables remain significant (p-values below 0.05), keep them in the model.
 :::
-:::
-
-
+::::
 
 ## Stepwise Regression Example
 
-::: {style="font-size: 70%;"}
+:::: {style="font-size: 70%;"}
 ::: nonincremental
-
 **Assess Remaining Variables**
 
 Now, only **Age** remains for consideration.
 
 **Calculating p-value for Age**
 
-- **Add Age to the Model**:
+-   **Add Age to the Model**:
 
-  $$
-  Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \beta_3 \cdot Age + \epsilon
-  $$
+    $$
+    Spending = \beta_0 + \beta_1 \cdot Income + \beta_2 \cdot Education + \beta_3 \cdot Age + \epsilon
+    $$
 
-- **Estimate $\hat{\beta}_3$ and Compute SE**: Estimate the coefficient for **Age** and its standard error.
+-   **Estimate** $\hat{\beta}_3$ and Compute SE: Estimate the coefficient for **Age** and its standard error.
 
-- **Calculate t-statistic and p-value**:
+-   **Calculate t-statistic and p-value**:
 
-  $$
-  t_{\text{Age}} = \frac{\hat{\beta}_3}{SE(\hat{\beta}_3)}
-  $$
+    $$
+    t_{\text{Age}} = \frac{\hat{\beta}_3}{SE(\hat{\beta}_3)}
+    $$
 
-- **Determine the p-value**: Find the p-value from the t-distribution.
+-   **Determine the p-value**: Find the p-value from the t-distribution.
 
 **Decision**
 
-- **Add or Exclude**: If the p-value for **Age** is below 0.05, add it to the model; otherwise, exclude it.
+-   **Add or Exclude**: If the p-value for **Age** is below 0.05, add it to the model; otherwise, exclude it.
 
-- **Example Outcome**: Suppose the p-value for **Age** is 0.15; you would not add **Age** to the model.
-
+-   **Example Outcome**: Suppose the p-value for **Age** is 0.15; you would not add **Age** to the model.
 :::
-:::
-
+::::
 
 ## Stepwise Regression Example
 
@@ -1170,7 +1254,62 @@ Here, **Income** and **Education** are the only significant predictors of **Spen
 2.  **Add**: Add the variable with the lowest p-value, provided it's below the threshold.
 3.  **Remove**: Remove variables if their p-values become too high.
 4.  **Stop**: Stop when no more variables can be added or removed.
+--->
 
+
+# Forward Selection {background-color="#cfb991"}
+
+## Forward Selection: Overview
+
+- **Forward selection** is a **sequential variable selection** procedure that begins with an **empty model** (i.e., no predictors) and incrementally adds variables based on significance criteria. 
+
+- Unlike the stepwise procedure, forward selection **never removes** any variable once it has been included.
+
+## Forward Selection: Procedure
+
+::: {style="font-size: 70%;"}
+
+1. **Start with No Variables**  
+   - The initial model includes **no** predictors:
+$$
+     y = \beta_0 + \epsilon.
+$$
+
+2. **Evaluate All Predictors for Entry**  
+   - For each potential predictor not yet in the model, calculate the F-statistic (or equivalently, t-statistic for the coefficient) and its corresponding p-value.
+   - **p-Value to Enter**: Each predictor is tested against a specified significance level (e.g., $\alpha_{\text{enter}}$). If the smallest p-value among all candidate predictors falls below $\alpha_{\text{enter}}$, add that corresponding predictor to the model.
+
+3. **Recalculate and Repeat**  
+   - After adding a predictor, recalculate the model parameters and evaluate the remaining predictors for entry. Continue this process of adding **one** variable at a time.
+
+4. **Termination**  
+   - The procedure stops when **no** remaining predictors meet the threshold for entry, meaning all p-values for excluded variables exceed $\alpha_{\text{enter}}$.
+
+:::{.fragment}
+
+> **Key Difference from Stepwise**: In forward selection, **once a variable is included**, it cannot be removed—even if adding subsequent variables renders it less significant.
+
+:::
+
+::: 
+
+## Forward Selection Limitations
+
+::: {style="font-size: 80%;"}
+
+1. **No Removal of Variables**: Because there is no mechanism to remove predictors, variables that become **unnecessary** later might remain in the final model. This can lead to inflated model complexity and reduced interpretability.
+
+2. **Potential Multicollinearity Issues**: Forward selection does not explicitly account for **multicollinearity**. High correlations among predictors may lead to unstable coefficient estimates and p-values, producing misleading or less robust results.
+
+3. **Greedy Algorithm**: The procedure is **myopically focused** on adding one predictor at a time based on immediate improvements in model fit. It may miss a combination of predictors that could perform better when considered together.
+
+4. **Risk of Overfitting**: When many potential predictors exist, forward selection can overfit the sample data, reducing the model’s generalizability. The model might appear strong in-sample but perform poorly on new data.
+
+5. **Neglect of Interactions and Nonlinearities**: Because forward selection evaluates predictors in isolation, it does not automatically consider **interaction** terms or **nonlinear transformations**. Thus, it can overlook influential higher-order relationships.
+
+:::
+
+<!---
 # Forward Selection {background-color="#cfb991"}
 
 ## Forward Selection
@@ -1192,6 +1331,63 @@ The forward selection procedure starts with no independent variables. It adds va
 4.  **Model Overfitting**: Forward selection increases the risk of overfitting, especially when the dataset has many variables. This results in a model that fits the training data too closely but performs poorly on new data.
 
 5.  **Assumes Independence of Variables**: The procedure assumes that variables can be assessed one by one for entry, without considering how combinations of variables interact. This might ignore important interactions between variables that could improve model performance.
+
+--->
+
+
+# Backward Elimination {background-color="#cfb991"}
+
+## Backward Elimination: Overview
+
+**Backward elimination** is a **sequential variable selection** method that starts with the **full model**—i.e., one that includes **all** potential predictors—and iteratively removes the least significant predictor at each step. It stops when no remaining predictors have a p-value above the designated **“p-value to leave”** threshold ($\alpha_{\text{remove}}$). Unlike stepwise methods, once a variable is removed, it is **not** allowed to reenter the model.
+
+
+## Backward Elimination: Procedure
+
+::: {style="font-size: 70%;"}
+
+1. **Begin with All Predictors**  
+   - The initial model is:
+$$
+     y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_k x_k + \epsilon.
+$$
+
+2. **Compute p-values**  
+   - Estimate the coefficients and compute p-values (or equivalent F-statistics) for each predictor.
+
+3. **Remove the Least Significant Variable**  
+   - Identify the predictor with the **largest** p-value.
+   - If that p-value exceeds the “p-value to leave” threshold, remove the corresponding variable from the model.
+
+4. **Re-estimate and Repeat**  
+   - After removing a variable, re-fit the model and compute p-values again for the reduced set of predictors.  
+   - Continue removing variables one at a time until **no** remaining predictors have p-values larger than $\alpha_{\text{remove}}$.
+
+5. **Stop Criterion**  
+   - Once no variable meets the removal criterion, the procedure ends. The final set of variables constitutes the chosen model.
+
+:::{.fragment}
+
+> **Key Restriction**: Any predictor removed at an earlier step **cannot** be reconsidered for reentry in later steps.
+
+:::
+
+:::
+
+## Backward Elimination Limitations
+
+1. **No Reentry of Variables**: Once a predictor is removed, it stays out—even if, after further eliminations, it would have become significant again. This may lead to **omitting** variables that could have value under a different model specification.
+
+2. **Multicollinearity Concerns**: Backward elimination does not explicitly address **multicollinearity**. Highly correlated predictors may cause instability in coefficient estimates, rendering p-values less reliable.
+
+3. **Risk of Overfitting**: Because the procedure begins with **all** variables, it may produce an overly complex initial model. While backward elimination might remove some predictors, it can still result in a model that is closely tailored to the sample data but performs poorly in **out-of-sample** scenarios.
+
+4. **Dependence on Initial Model**: The entire process depends heavily on the **initial choice** of predictors. If irrelevant variables are included or if critical interaction terms are missing, the final model may be suboptimal.
+
+5. **Potentially Different Final Models**: Different paths of elimination might yield different final models, depending on the order in which variables are removed. This is particularly true if multiple predictors have similar statistical significance or if interactions are not explored.
+
+
+<!---
 
 # Backward Elimination {background-color="#cfb991"}
 
@@ -1215,6 +1411,8 @@ The procedure stops when none of the independent variables in the model has a p-
 
 5.  **May Lead to Different Models**: Different elimination paths could lead to different final models, and not all of them may be optimal. Backward elimination might overlook variable interactions and combinations that forward selection would have considered.
 
+--->
+
 # Best-Subsets Regression {background-color="#cfb991"}
 
 ## Best-Subsets Regression
@@ -1229,13 +1427,11 @@ Typical output from such packages will enable the user to identify:
 
 -   The two best three-variable regression equations, and so on.
 
-::: {.fragment}
-
+::: fragment
 The criterion used in determining which estimated regression equations are best for any number of predictors is usually the value of the adjusted coefficient of determination.
-
 :::
 
-# Adding Variables in Regression Models: Notes  {background-color="#cfb991"}
+# Adding Variables in Regression Models: Notes {background-color="#cfb991"}
 
 ## Adding Variables in Regression Models: Notes
 
@@ -1249,39 +1445,36 @@ The criterion used in determining which estimated regression equations are best 
 
     -   Most statistical software (including `R`) are capable of implementing each of these algorithms automatically.
 
-
 # Summary {background-color="#cfb991"}
 
 ## Summary
 
-::: {style="font-size: 70%;"}
-
+:::: {style="font-size: 70%;"}
 ::: nonincremental
 Some key takeaways from this session:
 
-- **General Linear Model**: Models parameters with exponents of 1. Example:
+-   **General Linear Model**: Models parameters with exponents of 1. Example:
 
-  $$y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon$$
+    $$y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon$$
 
-- **Curvilinear Relationships**: Use quadratic terms to model curvature:
+-   **Curvilinear Relationships**: Use quadratic terms to model curvature:
 
-  $$y = \beta_0 + \beta_1 x_1 + \beta_2 x_1^2 + \epsilon$$
+    $$y = \beta_0 + \beta_1 x_1 + \beta_2 x_1^2 + \epsilon$$
 
-- **Interaction Effects**: Captures how two variables together influence $y$.Here is a great [paper about the topic](https://www.cambridge.org/core/journals/political-analysis/article/understanding-interaction-models-improving-empirical-analyses/9BA57B3720A303C61EBEC6DDFA40744B){target="_blank"}.
+-   **Interaction Effects**: Captures how two variables together influence $y$.Here is a great [paper about the topic](https://www.cambridge.org/core/journals/political-analysis/article/understanding-interaction-models-improving-empirical-analyses/9BA57B3720A303C61EBEC6DDFA40744B){target="_blank"}.
 
-  $$y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon$$
+    $$y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon$$
 
-- **Log Transformations**: Useful for handling non-linearity and heteroscedasticity.
+-   **Log Transformations**: Useful for handling non-linearity and heteroscedasticity.
 
-- **Stepwise Regression**: Iterative process of adding/removing variables based on statistical significance, but risks overfitting.
+-   **Stepwise Regression**: Iterative process of adding/removing variables based on statistical significance, but risks overfitting.
 
-- **Forward Selection**: Adds variables one-by-one but doesn’t allow removal after inclusion.
+-   **Forward Selection**: Adds variables one-by-one but doesn’t allow removal after inclusion.
 
-- **Backward Elimination**: Starts with all variables and eliminates non-significant ones.
+-   **Backward Elimination**: Starts with all variables and eliminates non-significant ones.
 
-- **Best-Subsets Regression**: Evaluates all possible subsets of variables to find the best model.
+-   **Best-Subsets Regression**: Evaluates all possible subsets of variables to find the best model.
 :::
-
-:::
+::::
 
 # Thank you! {background-color="#cfb991"}
