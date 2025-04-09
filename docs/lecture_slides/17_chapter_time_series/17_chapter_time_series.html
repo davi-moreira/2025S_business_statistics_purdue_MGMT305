@@ -759,14 +759,14 @@ F_{t+1} = Y_t, \text{ the actual observed value in period } t
 <p><strong>Gasoline sale time series</strong></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 3%">
 <col style="width: 12%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 19%">
-<col style="width: 13%">
-<col style="width: 10%">
-<col style="width: 20%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -978,14 +978,14 @@ F_{t+1} = Y_t, \text{ the actual observed value in period } t
 <p>The forecasts obtained using this method for the gasoline time series are:</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 3%">
-<col style="width: 11%">
-<col style="width: 6%">
-<col style="width: 9%">
-<col style="width: 20%">
-<col style="width: 14%">
-<col style="width: 11%">
-<col style="width: 22%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1139,9 +1139,11 @@ F_{t+1} = Y_t, \text{ the actual observed value in period } t
 <p>Using the results shown, we obtained the following values of MAE, MSE, and MAPE:</p>
 <p><span class="math display">\[
 \text{MAE} = \frac{26.81}{11} = 2.44
-\]</span> <span class="math display">\[
+\]</span></p>
+<p><span class="math display">\[
 \text{MSE} = \frac{89.07}{11} = 8.10
-\]</span> <span class="math display">\[
+\]</span></p>
+<p><span class="math display">\[
 \text{MAPE} = \frac{141.34}{11} = 12.85\%
 \]</span></p>
 </section>
@@ -1268,14 +1270,14 @@ F_{t+1} = \frac{\sum (\text{most recent } k \text{ data values})}{k} = \frac{Y_t
 <p><br></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 3%">
-<col style="width: 11%">
-<col style="width: 6%">
-<col style="width: 9%">
-<col style="width: 20%">
-<col style="width: 14%">
-<col style="width: 11%">
-<col style="width: 22%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1414,11 +1416,11 @@ F_{t+1} = \frac{\sum (\text{most recent } k \text{ data values})}{k} = \frac{Y_t
 <td></td>
 <td></td>
 <td>Totals</td>
-<td></td>
-<td></td>
 <td>0</td>
 <td>24</td>
 <td>92</td>
+<td>-20.79</td>
+<td>129.21</td>
 </tr>
 </tbody>
 </table>
@@ -1669,11 +1671,11 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <p><strong>Gasoline sale time series</strong> with smoothing constant <span class="math inline">\(\alpha = 0.2\)</span></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 8%">
-<col style="width: 25%">
-<col style="width: 13%">
-<col style="width: 21%">
-<col style="width: 32%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 24%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -2207,6 +2209,7 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <table class="caption-top">
 <thead>
 <tr class="header">
+<th></th>
 <th>df</th>
 <th>SS</th>
 <th>MS</th>
@@ -2221,6 +2224,7 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <td>6602.696</td>
 <td>1650.674</td>
 <td>32.871</td>
+<td>0.000</td>
 </tr>
 <tr class="even">
 <td>Residual</td>
@@ -2228,11 +2232,13 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <td>1154.980</td>
 <td>50.217</td>
 <td></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Total</td>
 <td>27</td>
 <td>7757.676</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -2327,6 +2333,7 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <table class="caption-top">
 <thead>
 <tr class="header">
+<th></th>
 <th>df</th>
 <th>SS</th>
 <th>MS</th>
@@ -2341,6 +2348,7 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <td>6486.115</td>
 <td>6486.115</td>
 <td>132.624</td>
+<td>0.000</td>
 </tr>
 <tr class="even">
 <td>Residual</td>
@@ -2348,11 +2356,13 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <td>1271.561</td>
 <td>48.906</td>
 <td></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Total</td>
 <td>27</td>
 <td>7757.676</td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -2396,7 +2406,7 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <h2>Forecast with Lag Variables: Excel</h2>
 <div style="font-size: 55%;">
 <center>
-<strong>Important!<br>Do not include empty cells or fill empty cells with zeros in Step 2.</strong>
+<strong>Important!</strong><br>Do not include empty cells or fill empty cells with zeros in Step 2.
 </center>
 <p><br></p>
 <div class="columns">
@@ -2710,14 +2720,14 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 <h2>Linear Trend Regression: Example</h2>
 <div style="font-size: 70%;">
 <p><strong>Bicycle Sales Time Series</strong></p>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 6%">
-<col style="width: 8%">
 <col style="width: 15%">
-<col style="width: 17%">
-<col style="width: 31%">
-<col style="width: 19%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 15%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4256,11 +4266,11 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <div style="font-size: 35%;">
 <table class="caption-top">
 <colgroup>
-<col style="width: 7%">
-<col style="width: 10%">
 <col style="width: 17%">
-<col style="width: 34%">
-<col style="width: 30%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 25%">
+<col style="width: 21%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4515,13 +4525,13 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <h2>Multiplicative Decomposition Model: Example (Step 4)</h2>
 <div style="font-size: 65%;">
 <p>Seasonal-irregular values for the entire time series.</p>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 7%">
-<col style="width: 11%">
-<col style="width: 18%">
-<col style="width: 30%">
-<col style="width: 32%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 22%">
+<col style="width: 24%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4749,12 +4759,12 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <div style="font-size: 70%;">
 <table class="caption-top">
 <colgroup>
-<col style="width: 7%">
-<col style="width: 10%">
-<col style="width: 15%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
 <col style="width: 18%">
-<col style="width: 19%">
-<col style="width: 28%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4968,11 +4978,11 @@ T_{17} = 5.10 + 0.148(17) = 7.616
 <h2>Seasonal Adjustments: Quarterly Forecasts Table (Step 8)</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 6%">
-<col style="width: 9%">
-<col style="width: 33%">
 <col style="width: 17%">
-<col style="width: 32%">
+<col style="width: 17%">
+<col style="width: 24%">
+<col style="width: 17%">
+<col style="width: 24%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -5059,18 +5069,18 @@ Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
 </section>
 <section id="summary-2" class="slide level2 center">
 <h2>Summary</h2>
-<div style="font-size: 70%;">
+<div style="font-size: 60%;">
 <div>
 <p><strong>Important</strong>: The following table is not exhaustive; it merely illustrates the examples discussed in the lecture. Remember that within the General Linear Model framework, these methods can be combined and adapted based on the specific objectives of the analysis.</p>
 <p><br></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 29%">
-<col style="width: 11%">
-<col style="width: 13%">
-<col style="width: 17%">
-<col style="width: 10%">
-<col style="width: 17%">
+<col style="width: 18%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
 </colgroup>
 <thead>
 <tr class="header">
